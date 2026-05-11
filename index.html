@@ -3,80 +3,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>李家堂水牛角舒筋館｜礁溪頂級順筋・私密療癒</title>
+    <title>李家堂水牛角舒筋館｜礁溪專業順筋・溫和療癒</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden;
-            background: #F8F5F0;
-            color: #2C2118;
-            font-family: 'Noto Sans TC', sans-serif;
-            scroll-behavior: smooth;
-        }
+        html, body { max-width: 100%; overflow-x: hidden; background: #F8F5F0; color: #2C2118; font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; }
         h1, h2, h3, h4 { font-family: 'Noto Serif TC', serif; }
         .text-gold { color: #C9A66B; }
         .bg-deep { background: #2C2118; }
-        .hero-section {
-            background: linear-gradient(rgba(44,33,24,0.65), rgba(44,33,24,0.75)),
-                        url('./hero.jpg');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .btn-gold {
-            background: linear-gradient(90deg, #C9A66B, #E8D5A3);
-            color: #2C2118;
-            transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .btn-gold:hover {
-            transform: translateY(-6px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(201,166,107,0.5);
-        }
-        .image-card {
-            overflow: hidden;
-            border-radius: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-        .image-card img {
-            transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        .hero-section { background: linear-gradient(rgba(44,33,24,0.65), rgba(44,33,24,0.75)), url('./hero.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .btn-gold { background: linear-gradient(90deg, #C9A66B, #E8D5A3); color: #2C2118; transition: all .4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-gold:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 20px 40px rgba(201,166,107,0.5); }
+        .btn-fb { background: #1877F2; color: white; }
+        .btn-fb:hover { background: #0d6efd; transform: translateY(-3px); }
+        .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .image-card img { transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1); }
         .image-card:hover img { transform: scale(1.12); }
-        .section-title {
-            position: relative;
-            display: inline-block;
-        }
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 2px;
-            background: #C9A66B;
-        }
+        .section-title:after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 2px; background: #C9A66B; }
         .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.97); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
         .lightbox.active { display: flex; }
-        .lightbox img { max-width: 100%; max-height: 92vh; border-radius: 16px; box-shadow: 0 0 80px rgba(0,0,0,0.8); }
-        @media (max-width: 768px) {
-            h1 { font-size: 2.6rem !important; }
-            .hero-section { min-height: 88vh; }
-        }
+        .lightbox img { max-width: 100%; max-height: 92vh; border-radius: 16px; }
+        @media (max-width: 768px) { h1 { font-size: 2.6rem !important; } .hero-section { min-height: 88vh; } }
     </style>
 </head>
 <body>
 
-    <!-- 導航 -->
+    <!-- 導航（已加入 FB 按鈕） -->
     <nav class="fixed top-0 w-full z-[100] bg-white/95 backdrop-blur-xl border-b border-gold/20 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold tracking-[0.08em] text-deep">李家堂</a>
+            
             <div class="hidden md:flex items-center gap-8 text-sm tracking-widest font-medium">
                 <a href="#story" class="hover:text-gold transition">關於我們</a>
                 <a href="#services" class="hover:text-gold transition">服務項目</a>
@@ -84,14 +42,27 @@
                 <a href="#course" class="hover:text-gold transition">課程報名</a>
                 <a href="#contact" class="hover:text-gold transition">聯絡我們</a>
             </div>
-            <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-8 py-3 rounded-full text-sm font-bold">LINE 預約</a>
+
+            <div class="flex items-center gap-4">
+                <!-- FB 按鈕 -->
+                <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" 
+                   class="btn-fb flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>FB 粉專</span>
+                </a>
+                <!-- LINE 按鈕 -->
+                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
+                    <i class="fa-brands fa-line"></i>
+                    <span>LINE 預約</span>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero 超豪華版 -->
+    <!-- Hero -->
     <section class="hero-section text-white text-center px-6">
         <div data-aos="fade-up" data-aos-duration="1400" class="max-w-3xl">
-            <span class="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full text-xs tracking-[0.25em] mb-6">礁溪・私密專業舒筋</span>
+            <span class="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full text-xs tracking-[0.25em] mb-6">礁溪・專業舒筋</span>
             <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-wider mb-6">
                 水牛角順筋<br>把打拼的疲憊<br><span class="text-gold">還給自己</span>
             </h1>
@@ -130,7 +101,7 @@
                 <h3 class="text-gold tracking-[0.2em] uppercase text-sm mb-3">芳遠老師</h3>
                 <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-8">國家證照<br>水牛角舒筋師</h2>
                 <p class="text-xl leading-relaxed text-gray-700">
-                    擁有10年以上臨床經驗，堅持「順筋路、不硬壓」的溫和手法。<br><br>
+                    10年以上臨床經驗，堅持「順筋路、不硬壓」的溫和手法。<br><br>
                     用天然水牛角的溫潤特性，幫助久站、肩頸僵硬、腰背酸痛的打拼人，找回身體的輕盈與力量。
                 </p>
             </div>
@@ -140,25 +111,30 @@
         </div>
     </section>
 
-    <!-- 服務項目（豪華卡片） -->
+    <!-- 服務項目 -->
     <section id="services" class="py-28 bg-[#F8F5F0]">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mx-auto mb-20">核心療癒服務</h2>
-            <div class="grid md:grid-cols-3 gap-8">
+            <h2 class="section-title text-4xl md:text-5xl font-bold text-center mx-auto mb-20">為什麼選擇這些療癒？</h2>
+            <div class="grid md:grid-cols-3 gap-10">
                 <div class="image-card bg-white p-8" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold mb-4">水牛角順筋</h3>
-                    <p class="text-gray-600 mb-6">肩頸背腰腿全套深層疏通，溫和不痛，效果持久。</p>
+                    <h3 class="text-2xl font-bold mb-3">水牛角舒筋</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？現代人久站、久坐、壓力大，筋膜容易黏連緊繃。</p>
+                    <p class="text-gray-600 mb-8">使用天然水牛角沿筋膜線條溫和疏通，能放鬆深層肌肉、促進氣血循環、緩解肩頸腰背痠痛、改善睡眠品質。不硬壓、不留痕，效果持久，讓你感覺「身體變輕、精神變好」。</p>
                     <div class="text-gold text-3xl font-light">NT$1,800 起</div>
                 </div>
+
                 <div class="image-card bg-white p-8" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold mb-4">能量礦石蒸足</h3>
-                    <p class="text-gray-600 mb-6">專利礦石 + 遠紅外線，快速暖身、促進循環。</p>
+                    <h3 class="text-2xl font-bold mb-3">臉部撥筋</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？臉部肌肉長期緊繃，容易浮腫、暗沉、線條下垂。</p>
+                    <p class="text-gray-600 mb-8">溫和撥開臉部筋膜與淋巴，促進血液循環、排出廢物、減輕浮腫、緊緻輪廓、改善氣色。</p>
                     <div class="text-gold text-3xl font-light">NT$1,200 起</div>
                 </div>
+
                 <div class="image-card bg-white p-8" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4">組合療程</h3>
-                    <p class="text-gray-600 mb-6">舒筋＋蒸足＋局部整復，最受歡迎方案。</p>
-                    <div class="text-gold text-3xl font-light">NT$2,600 起</div>
+                    <h3 class="text-2xl font-bold mb-3">整復舒緩</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？姿勢不良、久站久坐，容易導致關節錯位、肌肉不平衡。</p>
+                    <p class="text-gray-600 mb-8">專業手法調整骨架與軟組織，恢復正確位置、放鬆緊繃肌肉、改善痠痛與活動度。</p>
+                    <div class="text-gold text-3xl font-light">NT$1,500 起</div>
                 </div>
             </div>
         </div>
@@ -167,18 +143,17 @@
     <!-- 療癒流程 -->
     <section id="process" class="py-28 bg-deep text-white">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-16">五步驟・深度療癒</h2>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <h2 class="text-4xl font-bold mb-16">四步驟・深度療癒</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div data-aos="fade-up" class="text-center"><div class="text-5xl mb-4">01</div><p>暖身評估</p></div>
-                <div data-aos="fade-up" data-aos-delay="100" class="text-center"><div class="text-5xl mb-4">02</div><p>礦石蒸足</p></div>
-                <div data-aos="fade-up" data-aos-delay="200" class="text-center"><div class="text-5xl mb-4">03</div><p>水牛角順筋</p></div>
-                <div data-aos="fade-up" data-aos-delay="300" class="text-center"><div class="text-5xl mb-4">04</div><p>局部整復</p></div>
-                <div data-aos="fade-up" data-aos-delay="400" class="text-center"><div class="text-5xl mb-4">05</div><p>茶飲收尾</p></div>
+                <div data-aos="fade-up" data-aos-delay="100" class="text-center"><div class="text-5xl mb-4">02</div><p>水牛角順筋</p></div>
+                <div data-aos="fade-up" data-aos-delay="200" class="text-center"><div class="text-5xl mb-4">03</div><p>局部整復</p></div>
+                <div data-aos="fade-up" data-aos-delay="300" class="text-center"><div class="text-5xl mb-4">04</div><p>茶飲收尾</p></div>
             </div>
         </div>
     </section>
 
-    <!-- 課程報名（加強版） -->
+    <!-- 課程報名 -->
     <section id="course" class="py-28">
         <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
             <h3 class="text-gold tracking-widest uppercase mb-4">專業傳承</h3>
@@ -200,12 +175,19 @@
             <h3 class="text-5xl font-bold mb-8">李家堂水牛角舒筋館</h3>
             <p class="text-2xl mb-3">📍 宜蘭縣礁溪鄉龍潭路238號</p>
             <p class="text-2xl mb-10">📞 0938-105-610</p>
-            <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-16 py-6 rounded-full text-xl inline-block">官方 LINE 預約</a>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" class="btn-fb px-10 py-5 rounded-full inline-flex items-center gap-3 text-lg">
+                    <i class="fa-brands fa-facebook-f text-2xl"></i> 追蹤 FB 粉專
+                </a>
+                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-10 py-5 rounded-full inline-flex items-center gap-3 text-lg">
+                    <i class="fa-brands fa-line text-2xl"></i> LINE 立即預約
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="bg-black text-white/70 py-12 text-center text-sm">
-        © 2026 李家堂水牛角舒筋館｜Designed for 煥然翻身計畫
+        © 2026 李家堂水牛角舒筋館｜Designed for 煥然
     </footer>
 
     <!-- Lightbox -->
@@ -217,8 +199,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1200, once: true, offset: 80 });
-        
-        // Lightbox
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
         document.querySelectorAll('.image-card img').forEach(img => {
