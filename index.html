@@ -17,15 +17,10 @@
         .btn-gold { background: linear-gradient(90deg, #C9A66B, #E8D5A3); color: #2C2118; transition: all .4s cubic-bezier(0.4, 0, 0.2, 1); }
         .btn-gold:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 20px 40px rgba(201,166,107,0.5); }
         .btn-fb { background: #1877F2; color: white; }
-        .btn-fb:hover { background: #0d6efd; }
         .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
         .image-card img { transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1); }
         .image-card:hover img { transform: scale(1.12); }
         .section-title:after { content: ''; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 2px; background: #C9A66B; }
-        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.97); z-index: 10000; justify-content: center; align-items: center; padding: 20px; }
-        .lightbox.active { display: flex; }
-        .lightbox img { max-width: 100%; max-height: 92vh; border-radius: 16px; }
-        @media (max-width: 768px) { h1 { font-size: 2.6rem !important; } .hero-section { min-height: 88vh; } }
     </style>
 </head>
 <body>
@@ -144,73 +139,18 @@
         </div>
     </section>
 
-    <!-- 課程報名評估表單（專業版） -->
+    <!-- 課程報名（已嵌入你的 Google 表單） -->
     <section id="course" class="py-28 bg-[#F8F5F0]">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h3 class="text-gold tracking-widest uppercase mb-4">專業評估</h3>
-                <h2 class="text-5xl font-bold mb-6">水牛角舒筋課程報名</h2>
-                <p class="text-xl text-gray-600">填完表單 → 芳遠老師親自評估 → 推薦最適合你的班別</p>
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-5xl font-bold mb-4">水牛角舒筋課程報名評估</h2>
+                <p class="text-xl text-gray-600">芳遠老師將在24小時內親自評估並回覆</p>
             </div>
-
-            <div class="bg-white shadow-2xl rounded-3xl p-10 md:p-16 border border-gold/30" data-aos="fade-up">
-                <form id="courseForm" class="space-y-8">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-medium mb-2">姓名 <span class="text-red-500">*</span></label>
-                            <input type="text" required class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">手機 <span class="text-red-500">*</span></label>
-                            <input type="tel" required class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium mb-2">LINE ID</label>
-                        <input type="text" class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium mb-3">想報名的課程 <span class="text-red-500">*</span></label>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <label class="cursor-pointer"><input type="radio" name="course" value="初階" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">初階體驗班（2小時）</span></label>
-                            <label class="cursor-pointer"><input type="radio" name="course" value="基礎" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">基礎技術班（8小時）</span></label>
-                            <label class="cursor-pointer"><input type="radio" name="course" value="進階" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">進階師資培訓班</span></label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium mb-3">目前有舒筋或按摩經驗嗎？</label>
-                        <select class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
-                            <option value="">請選擇</option>
-                            <option>完全沒有，想從零開始</option>
-                            <option>有基礎按摩經驗</option>
-                            <option>已經在做相關工作</option>
-                            <option>其他</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium mb-3">你最希望學會什麼？（可複選）</label>
-                        <div class="grid grid-cols-2 gap-3">
-                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 幫家人朋友舒筋</label>
-                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 成為專業師傅接客</label>
-                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 自己開店</label>
-                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 只是想深入學習</label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium mb-3">什麼時間方便上課？</label>
-                        <input type="text" placeholder="例：平日晚上、週末白天" class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
-                    </div>
-
-                    <button type="submit" class="w-full bg-gradient-to-r from-[#C9A66B] to-[#E8D5A3] text-[#2C2118] py-6 rounded-3xl text-xl font-bold tracking-widest hover:scale-[1.02] transition">
-                        送出報名評估 → 芳遠老師將親自回覆
-                    </button>
-                    <p class="text-center text-sm text-gray-500">填完後 24 小時內會收到老師評估建議</p>
-                </form>
+            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden border border-gold/30">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw_F-O14KWltq-mg7iWVOWBOfLnkjXAZnAu2sa0R0jkI8K6Q/viewform?embedded=true" 
+                        width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">
+                    載入中...
+                </iframe>
             </div>
         </div>
     </section>
@@ -236,23 +176,9 @@
         © 2026 李家堂水牛角舒筋館｜Designed for 煥然
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
-        <span class="close-btn text-6xl text-white absolute top-10 right-10 cursor-pointer hover:text-gold">&times;</span>
-        <img id="lightbox-img" src="">
-    </div>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1200, once: true, offset: 80 });
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        document.querySelectorAll('.image-card img').forEach(img => {
-            img.addEventListener('click', () => {
-                lightboxImg.src = img.src;
-                lightbox.classList.add('active');
-            });
-        });
     </script>
 </body>
 </html>
