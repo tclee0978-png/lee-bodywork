@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>李家堂水牛角舒筋館｜宜蘭礁溪水牛角舒筋・古法熱灸</title>
-  <meta name="description" content="李家堂水牛角舒筋館位於宜蘭縣礁溪鄉龍潭路238號，提供水牛角舒筋、肩頸腰背放鬆、古法熱灸、全身筋骨放鬆、做工仔暖心方案。" />
-  <meta name="keywords" content="李家堂水牛角舒筋館, 宜蘭舒筋, 礁溪舒筋, 水牛角舒筋, 古法熱灸, 肩頸痠痛, 腰背舒緩, 做工仔放鬆" />
-  <meta property="og:title" content="李家堂水牛角舒筋館｜宜蘭礁溪水牛角舒筋" />
-  <meta property="og:description" content="水牛角舒筋 × 古法熱灸 × 宜蘭在地職人調理" />
-  <meta property="og:image" content="./237324_0.jpg" />
-  <meta property="og:type" content="website" />
+
+  <meta name="description" content="李家堂水牛角舒筋館位於宜蘭縣礁溪鄉龍潭路238號，提供水牛角舒筋、古法熱灸、肩頸腰背舒緩、全身筋骨放鬆、做工仔暖心方案。">
+  <meta name="keywords" content="李家堂水牛角舒筋館, 宜蘭舒筋, 礁溪舒筋, 水牛角舒筋, 古法熱灸, 肩頸痠痛, 腰背舒緩, 做工仔放鬆">
+
+  <meta property="og:title" content="李家堂水牛角舒筋館｜宜蘭礁溪水牛角舒筋">
+  <meta property="og:description" content="水牛角舒筋 × 古法熱灸 × 宜蘭在地職人調理">
+  <meta property="og:image" content="./237324_0.jpg">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
     :root{
@@ -32,86 +36,1060 @@
       --linegreen:#06c755;
     }
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;overflow-x:hidden}
-    body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.8}
-    h1,h2,h3,h4,.serif{font-family:'Noto Serif TC',serif}
-    a{text-decoration:none;color:inherit}
-    img{width:100%;display:block}
-    .container{width:min(1180px,92%);margin:auto}
-    .section{padding:96px 0}
-    .section-head{text-align:center;margin-bottom:52px}
-    .kicker{color:var(--brown2);font-weight:900;letter-spacing:.22em;font-size:13px;margin-bottom:14px}
-    .title{font-size:clamp(34px,4vw,56px);line-height:1.16;font-weight:900;color:var(--dark)}
-    .desc{max-width:780px;margin:18px auto 0;color:var(--muted);font-size:17px;line-height:2}
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
 
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:900;transition:.25s;white-space:nowrap;border:0;cursor:pointer}
-    .btn-line{background:var(--linegreen);color:white;box-shadow:0 12px 28px rgba(6,199,85,.22)}
-    .btn-fb{background:var(--fb);color:white;box-shadow:0 12px 28px rgba(24,119,242,.22)}
-    .btn-gold{background:linear-gradient(135deg,var(--gold2),#b77c36);color:#25150e;box-shadow:0 12px 30px rgba(101,67,47,.2)}
-    .btn-dark{background:var(--dark);color:white}
-    .btn-outline{border:1px solid rgba(255,255,255,.72);color:white;background:rgba(255,255,255,.08);backdrop-filter:blur(10px)}
-    .btn:hover{transform:translateY(-3px)}
+    html{
+      scroll-behavior:smooth;
+      overflow-x:hidden;
+    }
 
-    .nav{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(255,250,243,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--dark);letter-spacing:.08em}
-    .brand-icon{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--dark),var(--brown));color:var(--gold2)}
-    .brand small{display:block;color:var(--brown2);font-size:11px;letter-spacing:.18em;margin-top:2px}
-    .nav-links{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:900;color:#594133;letter-spacing:.06em}
-    .nav-links a{padding:8px 0;position:relative}
-    .nav-links a:after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:.25s}
-    .nav-links a:hover:after{width:100%}
-    .menu-btn{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--dark)}
-    .mobile-menu{display:none;position:fixed;top:74px;left:0;width:100%;z-index:999;background:rgba(255,250,243,.98);border-bottom:1px solid var(--line);padding:14px 22px 24px}
-    .mobile-menu a{display:block;padding:13px 0;font-weight:900;border-bottom:1px solid rgba(101,67,47,.1)}
+    body{
+      font-family:'Noto Sans TC',sans-serif;
+      background:var(--cream);
+      color:var(--ink);
+      overflow-x:hidden;
+      line-height:1.8;
+    }
 
-    .hero{min-height:100vh;padding-top:74px;position:relative;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(32,20,15,.92),rgba(32,20,15,.72),rgba(32,20,15,.18)),url('./237324_0.jpg') center/cover no-repeat;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 26%,rgba(242,211,148,.32),transparent 34%),linear-gradient(to bottom,transparent,rgba(32,20,15,.58))}
-    .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .78fr;gap:48px;align-items:center;padding:70px 0 86px}
-    .hero-tag{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(242,211,148,.45);background:rgba(255,255,255,.09);backdrop-filter:blur(10px);border-radius:999px;padding:10px 18px;color:#ffe4aa;font-size:13px;font-weight:900;letter-spacing:.16em}
-    .hero h1{font-size:clamp(46px,6vw,82px);line-height:1.05;font-weight:900;margin:26px 0 22px;text-shadow:0 10px 38px rgba(0,0,0,.38)}
-    .hero-lead{font-size:clamp(18px,2.1vw,27px);font-weight:800;line-height:1.75;margin-bottom:22px;color:rgba(255,255,255,.94)}
-    .hero-sub{max-width:690px;color:rgba(255,255,255,.78);line-height:2;margin-bottom:34px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:14px}.hero-actions .btn{height:58px;padding:0 26px;font-size:17px}
-    .hero-card{background:rgba(255,250,243,.94);color:var(--dark);border-radius:32px;padding:22px;box-shadow:0 28px 80px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.6)}
-    .hero-card img{height:350px;object-fit:cover;object-position:top;border-radius:24px}
-    .hero-card h3{font-size:24px;color:#8b3428;margin-top:18px;line-height:1.4}.hero-card p{color:var(--muted);margin-top:8px;line-height:1.8}
+    h1,h2,h3,h4,.serif{
+      font-family:'Noto Serif TC',serif;
+    }
 
-    .pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .pain-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 16px 44px rgba(101,67,47,.07);transition:.25s}.pain-card:hover{transform:translateY(-7px)}
-    .pain-card i{font-size:30px;color:var(--gold);margin-bottom:16px}.pain-card h3{font-size:21px;margin-bottom:10px}.pain-card p{color:var(--muted);font-size:15px;line-height:1.85}
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
-    .about{background:#fff}.two-grid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.image-round{border-radius:34px;overflow:hidden;box-shadow:0 24px 64px rgba(32,20,15,.16)}.image-round img{height:610px;object-fit:cover}.copy h2{font-size:clamp(34px,4vw,54px);line-height:1.2;margin-bottom:22px}.copy p{color:var(--muted);line-height:2.08;margin-bottom:18px}.info-box{display:flex;gap:16px;background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:20px;margin-top:26px}.info-box i{color:var(--gold);font-size:30px;margin-top:4px}.info-box b{display:block;margin-bottom:4px}.info-box span{color:var(--muted);font-size:14px;line-height:1.7}
+    img{
+      width:100%;
+      display:block;
+    }
 
-    .dark{background:var(--dark);color:white}.dark .title{color:white}.dark .desc{color:rgba(255,255,255,.68)}.dark .copy p{color:rgba(255,255,255,.72)}
-    .feature-list{display:grid;gap:14px;margin-top:26px}.feature-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px;display:flex;gap:14px}.feature-item i{color:var(--gold2);margin-top:6px}.feature-item b{display:block;color:#fff;margin-bottom:4px}.feature-item span{color:rgba(255,255,255,.68);font-size:14px}
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
+    }
 
-    .heat{background:linear-gradient(180deg,#fbf4ea,#f1e4d4)}.heat-card{background:#fff;border:1px solid var(--line);border-radius:34px;padding:34px;box-shadow:0 22px 60px rgba(101,67,47,.12)}.heat-card h3{font-size:32px;margin-bottom:16px}.heat-card p{color:var(--muted);line-height:2}.heat-hooks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.heat-hook{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:18px;text-align:center;font-weight:900;color:var(--brown)}
+    .section{
+      padding:96px 0;
+    }
 
-    .services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{border:1px solid var(--line);border-radius:28px;padding:28px;background:var(--paper);box-shadow:0 16px 44px rgba(101,67,47,.06)}.service-card i{font-size:28px;color:var(--gold);margin-bottom:16px}.service-card h3{font-size:23px;margin-bottom:10px}.service-card p{color:var(--muted);font-size:15px}.price{font-size:32px;color:#9a5a26;font-weight:900;margin-top:16px}.price small{font-size:14px;color:var(--muted)}
-    .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}.menu-img{background:#fff;border-radius:30px;padding:12px;box-shadow:0 20px 58px rgba(101,67,47,.13)}.menu-img img{border-radius:22px;object-fit:cover;object-position:top;height:660px}
+    .section-head{
+      text-align:center;
+      margin-bottom:52px;
+    }
 
-    .offer{background:linear-gradient(135deg,#2b1a12,#5b3b29);color:white}.offer-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:40px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.24)}.offer-box img{height:100%;min-height:540px;object-fit:cover}.offer-content{padding:46px}.offer-content h2{font-size:clamp(36px,4.5vw,58px);line-height:1.15;margin-bottom:18px}.offer-content p{color:rgba(255,255,255,.76);line-height:2}.offer-price{display:inline-flex;align-items:flex-end;gap:10px;background:#fffaf3;color:#8b3428;border-radius:22px;padding:14px 24px;margin:22px 0 26px;font-weight:900}.offer-price b{font-size:56px;line-height:1}.offer-list{display:grid;gap:12px;margin-bottom:28px}.offer-list div{display:flex;gap:10px;color:rgba(255,255,255,.88)}.offer-list i{color:var(--gold2);margin-top:5px}
+    .kicker{
+      color:var(--brown2);
+      font-weight:900;
+      letter-spacing:.22em;
+      font-size:13px;
+      margin-bottom:14px;
+    }
 
-    .proof{background:#f7ecdf}.proof-img{background:#fff;border:1px solid var(--line);border-radius:34px;padding:14px;box-shadow:0 22px 62px rgba(101,67,47,.14)}.proof-img img{border-radius:22px;height:auto}.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.gallery-main,.gallery-small{position:relative;border-radius:32px;overflow:hidden;box-shadow:0 18px 56px rgba(32,20,15,.14)}.gallery-main img{height:650px;object-fit:cover}.gallery-side{display:grid;gap:22px}.gallery-small img{height:314px;object-fit:cover}.caption{position:absolute;left:16px;right:16px;bottom:16px;padding:15px 18px;border-radius:18px;background:rgba(32,20,15,.76);color:#fff;backdrop-filter:blur(10px)}.caption b{display:block}.caption span{color:rgba(255,255,255,.75);font-size:13px}
+    .title{
+      font-size:clamp(34px,4vw,56px);
+      line-height:1.16;
+      font-weight:900;
+      color:var(--dark);
+    }
 
-    .contact{background:var(--dark);color:white}.contact .title{color:white}.contact .desc{color:rgba(255,255,255,.68)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:stretch}.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:32px;padding:32px}.contact-row{display:flex;gap:16px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.12)}.contact-row:last-child{border-bottom:0}.contact-row i{font-size:24px;color:var(--gold2);width:28px}.contact-row b{display:block;margin-bottom:4px}.contact-row span{color:rgba(255,255,255,.72);line-height:1.7}.map-box{border-radius:32px;overflow:hidden;background:#fff;min-height:430px}.map-box iframe{display:block;width:100%;height:430px;border:0}.bottom-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}.bottom-actions .btn{height:56px;padding:0 24px}
+    .desc{
+      max-width:780px;
+      margin:18px auto 0;
+      color:var(--muted);
+      font-size:17px;
+      line-height:2;
+    }
 
-    .footer{background:#0f0906;color:rgba(255,255,255,.65);text-align:center;padding:44px 0 104px}.footer h2{color:white;font-size:30px;letter-spacing:.12em;margin-bottom:10px}.footer p{font-size:14px}.mobile-sticky{display:none}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border-radius:999px;
+      font-weight:900;
+      transition:.25s;
+      white-space:nowrap;
+      border:0;
+      cursor:pointer;
+    }
 
-    @media(max-width:1050px){.nav-links{display:none}.menu-btn{display:grid;place-items:center}.hero-grid,.two-grid,.offer-box,.contact-grid,.gallery-grid{grid-template-columns:1fr}.pain-grid,.service-grid{grid-template-columns:repeat(2,1fr)}.menu-grid{grid-template-columns:1fr}.image-round img{height:520px}.offer-box img{min-height:420px}.gallery-main img,.gallery-small img{height:420px}.gallery-side{grid-template-columns:1fr 1fr}}
-    @media(max-width:700px){.container{width:min(100% - 32px,1180px)}.nav-inner{height:68px}.nav{background:rgba(255,250,243,.97)}.brand{font-size:15px}.brand small{display:none}.brand-icon{width:34px;height:34px}.mobile-menu{top:68px}.hero{min-height:auto;padding-top:68px;background:linear-gradient(180deg,rgba(32,20,15,.9),rgba(32,20,15,.7)),url('./237324_0.jpg') center top/cover no-repeat}.hero-grid{padding:56px 0 36px}.hero h1{font-size:42px}.hero-tag{font-size:11px;letter-spacing:.08em;padding:9px 12px}.hero-lead{font-size:18px}.hero-actions{display:grid}.hero-actions .btn{width:100%;height:54px}.hero-card{display:none}.section{padding:72px 0}.title{font-size:34px}.pain-grid,.service-grid,.heat-hooks,.gallery-side{grid-template-columns:1fr}.image-round img{height:430px}.menu-img img{height:auto}.offer-content{padding:30px 24px}.offer-price b{font-size:44px}.contact-card{padding:24px}.map-box,.map-box iframe{min-height:360px;height:360px}.bottom-actions{display:grid}.bottom-actions .btn{width:100%}.footer{padding-bottom:104px}.mobile-sticky{position:fixed;left:0;bottom:0;width:100%;z-index:2000;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:10px;background:rgba(255,250,243,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line)}.mobile-sticky .btn{height:48px;font-size:13px;padding:0}}
+    .btn-line{
+      background:var(--linegreen);
+      color:white;
+      box-shadow:0 12px 28px rgba(6,199,85,.22);
+    }
+
+    .btn-fb{
+      background:var(--fb);
+      color:white;
+      box-shadow:0 12px 28px rgba(24,119,242,.22);
+    }
+
+    .btn-gold{
+      background:linear-gradient(135deg,var(--gold2),#b77c36);
+      color:#25150e;
+      box-shadow:0 12px 30px rgba(101,67,47,.2);
+    }
+
+    .btn-dark{
+      background:var(--dark);
+      color:white;
+    }
+
+    .btn-outline{
+      border:1px solid rgba(255,255,255,.72);
+      color:white;
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    .nav{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      background:rgba(255,250,243,.92);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav-inner{
+      height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      color:var(--dark);
+      letter-spacing:.08em;
+    }
+
+    .brand-icon{
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--dark),var(--brown));
+      color:var(--gold2);
+    }
+
+    .brand small{
+      display:block;
+      color:var(--brown2);
+      font-size:11px;
+      letter-spacing:.18em;
+      margin-top:2px;
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      font-size:14px;
+      font-weight:900;
+      color:#594133;
+      letter-spacing:.06em;
+    }
+
+    .nav-links a{
+      padding:8px 0;
+      position:relative;
+    }
+
+    .nav-links a:after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:0;
+      height:2px;
+      background:var(--gold);
+      transition:.25s;
+    }
+
+    .nav-links a:hover:after{
+      width:100%;
+    }
+
+    .menu-btn{
+      display:none;
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--dark);
+    }
+
+    .mobile-menu{
+      display:none;
+      position:fixed;
+      top:74px;
+      left:0;
+      width:100%;
+      z-index:999;
+      background:rgba(255,250,243,.98);
+      border-bottom:1px solid var(--line);
+      padding:14px 22px 24px;
+    }
+
+    .mobile-menu a{
+      display:block;
+      padding:13px 0;
+      font-weight:900;
+      border-bottom:1px solid rgba(101,67,47,.1);
+    }
+
+    .hero{
+      min-height:100vh;
+      padding-top:74px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      color:white;
+      background:
+        linear-gradient(90deg,rgba(32,20,15,.92),rgba(32,20,15,.72),rgba(32,20,15,.18)),
+        url('./237324_0.jpg') center/cover no-repeat;
+      overflow:hidden;
+    }
+
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 26%,rgba(242,211,148,.32),transparent 34%),
+        linear-gradient(to bottom,transparent,rgba(32,20,15,.58));
+    }
+
+    .hero-grid{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:1.02fr .78fr;
+      gap:48px;
+      align-items:center;
+      padding:70px 0 86px;
+    }
+
+    .hero-tag{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      border:1px solid rgba(242,211,148,.45);
+      background:rgba(255,255,255,.09);
+      backdrop-filter:blur(10px);
+      border-radius:999px;
+      padding:10px 18px;
+      color:#ffe4aa;
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.16em;
+    }
+
+    .hero h1{
+      font-size:clamp(46px,6vw,82px);
+      line-height:1.05;
+      font-weight:900;
+      margin:26px 0 22px;
+      text-shadow:0 10px 38px rgba(0,0,0,.38);
+    }
+
+    .hero-lead{
+      font-size:clamp(18px,2.1vw,27px);
+      font-weight:800;
+      line-height:1.75;
+      margin-bottom:22px;
+      color:rgba(255,255,255,.94);
+    }
+
+    .hero-sub{
+      max-width:690px;
+      color:rgba(255,255,255,.78);
+      line-height:2;
+      margin-bottom:34px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .hero-actions .btn{
+      height:58px;
+      padding:0 26px;
+      font-size:17px;
+    }
+
+    .hero-card{
+      background:rgba(255,250,243,.94);
+      color:var(--dark);
+      border-radius:32px;
+      padding:22px;
+      box-shadow:0 28px 80px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.6);
+    }
+
+    .hero-card img{
+      height:350px;
+      object-fit:cover;
+      object-position:top;
+      border-radius:24px;
+    }
+
+    .hero-card h3{
+      font-size:24px;
+      color:#8b3428;
+      margin-top:18px;
+      line-height:1.4;
+    }
+
+    .hero-card p{
+      color:var(--muted);
+      margin-top:8px;
+      line-height:1.8;
+    }
+
+    .pain-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+
+    .pain-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:0 16px 44px rgba(101,67,47,.07);
+      transition:.25s;
+    }
+
+    .pain-card:hover{
+      transform:translateY(-7px);
+    }
+
+    .pain-card i{
+      font-size:30px;
+      color:var(--gold);
+      margin-bottom:16px;
+    }
+
+    .pain-card h3{
+      font-size:21px;
+      margin-bottom:10px;
+    }
+
+    .pain-card p{
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.85;
+    }
+
+    .about{
+      background:#fff;
+    }
+
+    .two-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:58px;
+      align-items:center;
+    }
+
+    .image-round{
+      border-radius:34px;
+      overflow:hidden;
+      box-shadow:0 24px 64px rgba(32,20,15,.16);
+    }
+
+    .image-round img{
+      height:610px;
+      object-fit:cover;
+    }
+
+    .copy h2{
+      font-size:clamp(34px,4vw,54px);
+      line-height:1.2;
+      margin-bottom:22px;
+    }
+
+    .copy p{
+      color:var(--muted);
+      line-height:2.08;
+      margin-bottom:18px;
+    }
+
+    .info-box{
+      display:flex;
+      gap:16px;
+      background:var(--cream);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:20px;
+      margin-top:26px;
+    }
+
+    .info-box i{
+      color:var(--gold);
+      font-size:30px;
+      margin-top:4px;
+    }
+
+    .info-box b{
+      display:block;
+      margin-bottom:4px;
+    }
+
+    .info-box span{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .dark{
+      background:var(--dark);
+      color:white;
+    }
+
+    .dark .title{
+      color:white;
+    }
+
+    .dark .desc{
+      color:rgba(255,255,255,.68);
+    }
+
+    .dark .copy p{
+      color:rgba(255,255,255,.72);
+    }
+
+    .feature-list{
+      display:grid;
+      gap:14px;
+      margin-top:26px;
+    }
+
+    .feature-item{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:20px;
+      padding:18px;
+      display:flex;
+      gap:14px;
+    }
+
+    .feature-item i{
+      color:var(--gold2);
+      margin-top:6px;
+    }
+
+    .feature-item b{
+      display:block;
+      color:#fff;
+      margin-bottom:4px;
+    }
+
+    .feature-item span{
+      color:rgba(255,255,255,.68);
+      font-size:14px;
+    }
+
+    .heat{
+      background:linear-gradient(180deg,#fbf4ea,#f1e4d4);
+    }
+
+    .heat-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:34px;
+      padding:34px;
+      box-shadow:0 22px 60px rgba(101,67,47,.12);
+    }
+
+    .heat-card h3{
+      font-size:32px;
+      margin-bottom:16px;
+    }
+
+    .heat-card p{
+      color:var(--muted);
+      line-height:2;
+      margin-bottom:14px;
+    }
+
+    .heat-hooks{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:24px;
+    }
+
+    .heat-hook{
+      background:var(--cream);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:18px;
+      text-align:center;
+      font-weight:900;
+      color:var(--brown);
+    }
+
+    .services{
+      background:#fff;
+    }
+
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .service-card{
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:28px;
+      background:var(--paper);
+      box-shadow:0 16px 44px rgba(101,67,47,.06);
+    }
+
+    .service-card i{
+      font-size:28px;
+      color:var(--gold);
+      margin-bottom:16px;
+    }
+
+    .service-card h3{
+      font-size:23px;
+      margin-bottom:10px;
+    }
+
+    .service-card p{
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .price{
+      font-size:32px;
+      color:#9a5a26;
+      font-weight:900;
+      margin-top:16px;
+    }
+
+    .price small{
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+      margin-top:34px;
+    }
+
+    .menu-img{
+      background:#fff;
+      border-radius:30px;
+      padding:12px;
+      box-shadow:0 20px 58px rgba(101,67,47,.13);
+    }
+
+    .menu-img img{
+      border-radius:22px;
+      object-fit:cover;
+      object-position:top;
+      height:660px;
+    }
+
+    .offer{
+      background:linear-gradient(135deg,#2b1a12,#5b3b29);
+      color:white;
+    }
+
+    .offer-box{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:36px;
+      align-items:center;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:40px;
+      overflow:hidden;
+      box-shadow:0 30px 90px rgba(0,0,0,.24);
+    }
+
+    .offer-box img{
+      height:100%;
+      min-height:540px;
+      object-fit:cover;
+    }
+
+    .offer-content{
+      padding:46px;
+    }
+
+    .offer-content h2{
+      font-size:clamp(36px,4.5vw,58px);
+      line-height:1.15;
+      margin-bottom:18px;
+    }
+
+    .offer-content p{
+      color:rgba(255,255,255,.76);
+      line-height:2;
+    }
+
+    .offer-price{
+      display:inline-flex;
+      align-items:flex-end;
+      gap:10px;
+      background:#fffaf3;
+      color:#8b3428;
+      border-radius:22px;
+      padding:14px 24px;
+      margin:22px 0 26px;
+      font-weight:900;
+    }
+
+    .offer-price b{
+      font-size:56px;
+      line-height:1;
+    }
+
+    .offer-list{
+      display:grid;
+      gap:12px;
+      margin-bottom:28px;
+    }
+
+    .offer-list div{
+      display:flex;
+      gap:10px;
+      color:rgba(255,255,255,.88);
+    }
+
+    .offer-list i{
+      color:var(--gold2);
+      margin-top:5px;
+    }
+
+    .proof{
+      background:#f7ecdf;
+    }
+
+    .proof-img{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:34px;
+      padding:14px;
+      box-shadow:0 22px 62px rgba(101,67,47,.14);
+    }
+
+    .proof-img img{
+      border-radius:22px;
+      height:auto;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:22px;
+    }
+
+    .gallery-main,
+    .gallery-small{
+      position:relative;
+      border-radius:32px;
+      overflow:hidden;
+      box-shadow:0 18px 56px rgba(32,20,15,.14);
+    }
+
+    .gallery-main img{
+      height:650px;
+      object-fit:cover;
+    }
+
+    .gallery-side{
+      display:grid;
+      gap:22px;
+    }
+
+    .gallery-small img{
+      height:314px;
+      object-fit:cover;
+    }
+
+    .caption{
+      position:absolute;
+      left:16px;
+      right:16px;
+      bottom:16px;
+      padding:15px 18px;
+      border-radius:18px;
+      background:rgba(32,20,15,.76);
+      color:#fff;
+      backdrop-filter:blur(10px);
+    }
+
+    .caption b{
+      display:block;
+    }
+
+    .caption span{
+      color:rgba(255,255,255,.75);
+      font-size:13px;
+    }
+
+    .contact{
+      background:var(--dark);
+      color:white;
+    }
+
+    .contact .title{
+      color:white;
+    }
+
+    .contact .desc{
+      color:rgba(255,255,255,.68);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:36px;
+      align-items:stretch;
+    }
+
+    .contact-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:32px;
+      padding:32px;
+    }
+
+    .contact-row{
+      display:flex;
+      gap:16px;
+      padding:17px 0;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .contact-row:last-child{
+      border-bottom:0;
+    }
+
+    .contact-row i{
+      font-size:24px;
+      color:var(--gold2);
+      width:28px;
+    }
+
+    .contact-row b{
+      display:block;
+      margin-bottom:4px;
+    }
+
+    .contact-row span{
+      color:rgba(255,255,255,.72);
+      line-height:1.7;
+    }
+
+    .map-link-box{
+      background:#fffaf3;
+      color:#20140f;
+      border-radius:32px;
+      padding:38px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-start;
+      gap:18px;
+      min-height:430px;
+      box-shadow:0 22px 60px rgba(0,0,0,.18);
+    }
+
+    .map-link-box h3{
+      font-size:34px;
+      font-family:'Noto Serif TC',serif;
+      color:var(--dark);
+    }
+
+    .map-link-box p{
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.9;
+    }
+
+    .map-link-box .btn{
+      height:58px;
+      padding:0 26px;
+      font-size:17px;
+    }
+
+    .bottom-actions{
+      margin-top:28px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .bottom-actions .btn{
+      height:56px;
+      padding:0 24px;
+    }
+
+    .footer{
+      background:#0f0906;
+      color:rgba(255,255,255,.65);
+      text-align:center;
+      padding:44px 0 104px;
+    }
+
+    .footer h2{
+      color:white;
+      font-size:30px;
+      letter-spacing:.12em;
+      margin-bottom:10px;
+    }
+
+    .footer p{
+      font-size:14px;
+    }
+
+    .mobile-sticky{
+      display:none;
+    }
+
+    @media(max-width:1050px){
+      .nav-links{
+        display:none;
+      }
+
+      .menu-btn{
+        display:grid;
+        place-items:center;
+      }
+
+      .hero-grid,
+      .two-grid,
+      .offer-box,
+      .contact-grid,
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .pain-grid,
+      .service-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .menu-grid{
+        grid-template-columns:1fr;
+      }
+
+      .image-round img{
+        height:520px;
+      }
+
+      .offer-box img{
+        min-height:420px;
+      }
+
+      .gallery-main img,
+      .gallery-small img{
+        height:420px;
+      }
+
+      .gallery-side{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:700px){
+      .container{
+        width:min(100% - 32px,1180px);
+      }
+
+      .nav-inner{
+        height:68px;
+      }
+
+      .nav{
+        background:rgba(255,250,243,.97);
+      }
+
+      .brand{
+        font-size:15px;
+      }
+
+      .brand small{
+        display:none;
+      }
+
+      .brand-icon{
+        width:34px;
+        height:34px;
+      }
+
+      .mobile-menu{
+        top:68px;
+      }
+
+      .hero{
+        min-height:auto;
+        padding-top:68px;
+        background:
+          linear-gradient(180deg,rgba(32,20,15,.9),rgba(32,20,15,.7)),
+          url('./237324_0.jpg') center top/cover no-repeat;
+      }
+
+      .hero-grid{
+        padding:56px 0 36px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero-tag{
+        font-size:11px;
+        letter-spacing:.08em;
+        padding:9px 12px;
+      }
+
+      .hero-lead{
+        font-size:18px;
+      }
+
+      .hero-actions{
+        display:grid;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+        height:54px;
+      }
+
+      .hero-card{
+        display:none;
+      }
+
+      .section{
+        padding:72px 0;
+      }
+
+      .title{
+        font-size:34px;
+      }
+
+      .pain-grid,
+      .service-grid,
+      .heat-hooks,
+      .gallery-side{
+        grid-template-columns:1fr;
+      }
+
+      .image-round img{
+        height:430px;
+      }
+
+      .menu-img img{
+        height:auto;
+      }
+
+      .offer-content{
+        padding:30px 24px;
+      }
+
+      .offer-price b{
+        font-size:44px;
+      }
+
+      .contact-card{
+        padding:24px;
+      }
+
+      .map-link-box{
+        min-height:auto;
+        padding:30px 24px;
+      }
+
+      .map-link-box h3{
+        font-size:28px;
+      }
+
+      .bottom-actions{
+        display:grid;
+      }
+
+      .bottom-actions .btn{
+        width:100%;
+      }
+
+      .footer{
+        padding-bottom:104px;
+      }
+
+      .mobile-sticky{
+        position:fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        z-index:2000;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:8px;
+        padding:10px;
+        background:rgba(255,250,243,.96);
+        backdrop-filter:blur(14px);
+        border-top:1px solid var(--line);
+      }
+
+      .mobile-sticky .btn{
+        height:48px;
+        font-size:13px;
+        padding:0;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <nav class="nav">
     <div class="container nav-inner">
+
       <a href="#top" class="brand">
-        <span class="brand-icon"><i class="fa-solid fa-hands-holding-circle"></i></span>
-        <span>李家堂<br><small>水牛角舒筋館</small></span>
+        <span class="brand-icon">
+          <i class="fa-solid fa-hands-holding-circle"></i>
+        </span>
+        <span>
+          李家堂
+          <br>
+          <small>水牛角舒筋館</small>
+        </span>
       </a>
+
       <div class="nav-links">
         <a href="#pain">適合對象</a>
         <a href="#about">李師傅</a>
@@ -120,7 +1098,11 @@
         <a href="#services">服務價格</a>
         <a href="#contact">聯絡</a>
       </div>
-      <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+
+      <button class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
     </div>
   </nav>
 
@@ -134,195 +1116,584 @@
   </div>
 
   <main id="top">
+
     <section class="hero">
+
       <div class="container hero-grid">
+
         <div>
-          <div class="hero-tag"><i class="fa-solid fa-location-dot"></i> 宜蘭礁溪・職人舒筋調理</div>
-          <h1>李家堂<br>水牛角舒筋館</h1>
-          <p class="hero-lead">水牛角舒筋 × 古法熱灸 × 在地信任調理</p>
-          <p class="hero-sub">肩頸痠痛、腰背疲勞、久坐久站、做工下班身體硬梆梆。別硬撐，來找李師傅，把累積太久的緊繃慢慢鬆開。</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-gold"><i class="fa-solid fa-calendar-check"></i> 立即預約</a>
-            <a href="#services" class="btn btn-outline"><i class="fa-solid fa-spa"></i> 查看服務</a>
+
+          <div class="hero-tag">
+            <i class="fa-solid fa-location-dot"></i>
+            宜蘭礁溪・職人舒筋調理
           </div>
+
+          <h1>
+            李家堂
+            <br>
+            水牛角舒筋館
+          </h1>
+
+          <p class="hero-lead">
+            水牛角舒筋 × 古法熱灸 × 在地信任調理
+          </p>
+
+          <p class="hero-sub">
+            肩頸痠痛、腰背疲勞、久坐久站、做工下班身體硬梆梆。別硬撐，來找李師傅，把累積太久的緊繃慢慢鬆開。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-gold">
+              <i class="fa-solid fa-calendar-check"></i>
+              立即預約
+            </a>
+
+            <a href="#services" class="btn btn-outline">
+              <i class="fa-solid fa-spa"></i>
+              查看服務
+            </a>
+          </div>
+
         </div>
+
         <div class="hero-card">
           <img src="./237324_0.jpg" alt="李芳遠老師水牛角舒筋操作照">
           <h3>真實操作，不是素材圖。</h3>
-          <p>真人、真店面、真手法，這是李家堂最該放大的信任資產。</p>
+          <p>
+            真人、真店面、真手法，這是李家堂最該放大的信任資產。
+          </p>
         </div>
+
       </div>
+
     </section>
 
     <section class="section" id="pain">
+
       <div class="container">
+
         <div class="section-head">
           <div class="kicker">WHO NEEDS THIS</div>
           <h2 class="title">你不是老了，是身體撐太久</h2>
-          <p class="desc">這個網站不走假高級路線，主打宜蘭在地、真實職人、勞動放鬆、肩頸腰背舒緩。</p>
+          <p class="desc">
+            這個網站不走假高級路線，主打宜蘭在地、真實職人、勞動放鬆、肩頸腰背舒緩。
+          </p>
         </div>
+
         <div class="pain-grid">
-          <div class="pain-card"><i class="fa-solid fa-helmet-safety"></i><h3>做工搬重</h3><p>肩背出力、腰背緊繃、下班身體硬梆梆。</p></div>
-          <div class="pain-card"><i class="fa-solid fa-car-side"></i><h3>久開車久坐</h3><p>腰臀緊、背部悶、肩頸沉重，越休息越卡。</p></div>
-          <div class="pain-card"><i class="fa-solid fa-store"></i><h3>久站服務業</h3><p>雙腿沉、腳底酸、腰背僵，站一整天很疲勞。</p></div>
-          <div class="pain-card"><i class="fa-solid fa-mobile-screen"></i><h3>低頭滑手機</h3><p>肩頸卡卡、頭重、斜方肌緊繃，越滑越累。</p></div>
+
+          <div class="pain-card">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <h3>做工搬重</h3>
+            <p>肩背出力、腰背緊繃、下班身體硬梆梆。</p>
+          </div>
+
+          <div class="pain-card">
+            <i class="fa-solid fa-car-side"></i>
+            <h3>久開車久坐</h3>
+            <p>腰臀緊、背部悶、肩頸沉重，越休息越卡。</p>
+          </div>
+
+          <div class="pain-card">
+            <i class="fa-solid fa-store"></i>
+            <h3>久站服務業</h3>
+            <p>雙腿沉、腳底酸、腰背僵，站一整天很疲勞。</p>
+          </div>
+
+          <div class="pain-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>低頭滑手機</h3>
+            <p>肩頸卡卡、頭重、斜方肌緊繃，越滑越累。</p>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section about" id="about">
+
       <div class="container two-grid">
-        <div class="image-round"><img src="./237326_0.jpg" alt="李家堂水牛角舒筋館正面店面"></div>
+
+        <div class="image-round">
+          <img src="./237326_0.jpg" alt="李家堂水牛角舒筋館正面店面">
+        </div>
+
         <div class="copy">
           <div class="kicker">LOCAL TRUST</div>
-          <h2>宜蘭在地調理品牌<br>看得到店，找得到人</h2>
-          <p>李家堂水牛角舒筋館位於宜蘭縣礁溪鄉龍潭路238號，店面、招牌、電話清楚可見。這對地方型服務很重要，因為客人不是只看漂亮，而是要安心。</p>
-          <p>這裡主打水牛角舒筋、肩頸腰背放鬆、古法熱灸與日常養生調理，適合久坐、久站、勞動工作、長期疲勞族群。</p>
-          <div class="info-box"><i class="fa-solid fa-location-dot"></i><div><b>實體店面信任感</b><span>完整門面、招牌、電話，適合搭配 Google 地圖與 Google 商家。</span></div></div>
+          <h2>
+            宜蘭在地調理品牌
+            <br>
+            看得到店，找得到人
+          </h2>
+
+          <p>
+            李家堂水牛角舒筋館位於宜蘭縣礁溪鄉龍潭路238號，店面、招牌、電話清楚可見。這對地方型服務很重要，因為客人不是只看漂亮，而是要安心。
+          </p>
+
+          <p>
+            這裡主打水牛角舒筋、肩頸腰背放鬆、古法熱灸與日常養生調理，適合久坐、久站、勞動工作、長期疲勞族群。
+          </p>
+
+          <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <b>實體店面信任感</b>
+              <span>完整門面、招牌、電話，適合搭配 Google 地圖與 Google 商家。</span>
+            </div>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section dark" id="tech">
+
       <div class="container two-grid">
-        <div class="image-round"><img src="./237329_0.jpg" alt="水牛角舒筋近拍"></div>
-        <div class="copy">
-          <div class="kicker">BUFFALO HORN BODYWORK</div>
-          <h2>深層舒筋<br>放鬆循環</h2>
-          <p>水牛角舒筋透過工具滑推與手法配合，針對肩頸、背部、腰臀與筋膜緊繃區域進行舒緩調理。</p>
-          <p>重點不是暴力硬壓，而是順著筋路慢慢帶開，讓身體從緊繃狀態回到比較放鬆的感覺。</p>
-          <div class="feature-list">
-            <div class="feature-item"><i class="fa-solid fa-check"></i><div><b>肩頸放鬆</b><span>適合低頭族、開車族、久坐電腦族。</span></div></div>
-            <div class="feature-item"><i class="fa-solid fa-check"></i><div><b>腰背舒緩</b><span>適合做工、搬重、久站導致的疲勞。</span></div></div>
-            <div class="feature-item"><i class="fa-solid fa-check"></i><div><b>真實效果感</b><span>實拍操作照比 AI 素材更能建立信任。</span></div></div>
-          </div>
+
+        <div class="image-round">
+          <img src="./237329_0.jpg" alt="水牛角舒筋近拍">
         </div>
+
+        <div class="copy">
+
+          <div class="kicker">BUFFALO HORN BODYWORK</div>
+
+          <h2>
+            深層舒筋
+            <br>
+            放鬆循環
+          </h2>
+
+          <p>
+            水牛角舒筋透過工具滑推與手法配合，針對肩頸、背部、腰臀與筋膜緊繃區域進行舒緩調理。
+          </p>
+
+          <p>
+            重點不是暴力硬壓，而是順著筋路慢慢帶開，讓身體從緊繃狀態回到比較放鬆的感覺。
+          </p>
+
+          <div class="feature-list">
+
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <b>肩頸放鬆</b>
+                <span>適合低頭族、開車族、久坐電腦族。</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <b>腰背舒緩</b>
+                <span>適合做工、搬重、久站導致的疲勞。</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <div>
+                <b>真實效果感</b>
+                <span>實拍操作照比 AI 素材更能建立信任。</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
 
     <section class="section heat" id="heat">
+
       <div class="container two-grid">
+
         <div class="heat-card">
+
           <div class="kicker">ANCIENT HEAT THERAPY</div>
+
           <h3 class="serif">古法熱灸調理</h3>
-          <p>宮延樓熱灸融合古法熱灸理念與現代熱能調理方式，透過溫熱循環與穴位舒緩，幫助身體放鬆、舒緩寒濕疲勞與長期緊繃感。</p>
-          <p>適合久坐久站、手腳冰冷、肩頸腰背緊繃、女性日常暖身保養與長期疲勞壓力族群。</p>
+
+          <p>
+            宮延樓熱灸融合古法熱灸理念與現代熱能調理方式，透過溫熱循環與穴位舒緩，幫助身體放鬆、舒緩寒濕疲勞與長期緊繃感。
+          </p>
+
+          <p>
+            適合久坐久站、手腳冰冷、肩頸腰背緊繃、女性日常暖身保養與長期疲勞壓力族群。
+          </p>
+
           <div class="heat-hooks">
-            <div class="heat-hook">一灸<br>舒緩寒濕</div>
-            <div class="heat-hook">二灸<br>舒筋活絡</div>
-            <div class="heat-hook">三灸<br>養陽暖身</div>
+
+            <div class="heat-hook">
+              一灸
+              <br>
+              舒緩寒濕
+            </div>
+
+            <div class="heat-hook">
+              二灸
+              <br>
+              舒筋活絡
+            </div>
+
+            <div class="heat-hook">
+              三灸
+              <br>
+              養陽暖身
+            </div>
+
           </div>
+
         </div>
-        <div class="image-round"><img src="./237327_0.jpg" alt="古法熱灸價目表"></div>
+
+        <div class="image-round">
+          <img src="./237327_0.jpg" alt="古法熱灸價目表">
+        </div>
+
       </div>
+
     </section>
 
     <section class="section services" id="services">
+
       <div class="container">
+
         <div class="section-head">
           <div class="kicker">SERVICE MENU</div>
           <h2 class="title">服務項目與價格</h2>
-          <p class="desc">價格清楚，客人才敢預約。實際內容可依現場評估調整。</p>
+          <p class="desc">
+            價格清楚，客人才敢預約。實際內容可依現場評估調整。
+          </p>
         </div>
+
         <div class="service-grid">
-          <div class="service-card"><i class="fa-solid fa-fire-flame-curved"></i><h3>熱灸深層舒緩</h3><p>溫熱放鬆、舒緩寒濕疲勞。</p><div class="price">$1200 <small>/ 約60分鐘</small></div></div>
-          <div class="service-card"><i class="fa-solid fa-person-rays"></i><h3>全身筋骨放鬆</h3><p>適合長期疲勞與全身緊繃。</p><div class="price">$900</div></div>
-          <div class="service-card"><i class="fa-solid fa-hand-sparkles"></i><h3>局部酸痛舒緩</h3><p>針對單點緊繃快速處理。</p><div class="price">$600</div></div>
-          <div class="service-card"><i class="fa-solid fa-user-doctor"></i><h3>肩頸鬆筋開穴</h3><p>低頭族、肩頸僵硬者適合。</p><div class="price">$1200 <small>/ 約60分鐘</small></div></div>
-          <div class="service-card"><i class="fa-solid fa-spa"></i><h3>背部鬆筋開穴</h3><p>全背、腰痠、久勞疲勞放鬆。</p><div class="price">$1200 <small>/ 約60分鐘</small></div></div>
-          <div class="service-card"><i class="fa-solid fa-face-smile-beam"></i><h3>小臉穴位鬆筋</h3><p>含眼睛周邊，適合日常保養。</p><div class="price">$1500 <small>/ 約60分鐘</small></div></div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <h3>熱灸深層舒緩</h3>
+            <p>溫熱放鬆、舒緩寒濕疲勞。</p>
+            <div class="price">$1200 <small>/ 約60分鐘</small></div>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-person-rays"></i>
+            <h3>全身筋骨放鬆</h3>
+            <p>適合長期疲勞與全身緊繃。</p>
+            <div class="price">$900</div>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-hand-sparkles"></i>
+            <h3>局部酸痛舒緩</h3>
+            <p>針對單點緊繃快速處理。</p>
+            <div class="price">$600</div>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>肩頸鬆筋開穴</h3>
+            <p>低頭族、肩頸僵硬者適合。</p>
+            <div class="price">$1200 <small>/ 約60分鐘</small></div>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-spa"></i>
+            <h3>背部鬆筋開穴</h3>
+            <p>全背、腰痠、久勞疲勞放鬆。</p>
+            <div class="price">$1200 <small>/ 約60分鐘</small></div>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <h3>小臉穴位鬆筋</h3>
+            <p>含眼睛周邊，適合日常保養。</p>
+            <div class="price">$1500 <small>/ 約60分鐘</small></div>
+          </div>
+
         </div>
+
         <div class="menu-grid">
-          <div class="menu-img"><img src="./237327_0.jpg" alt="熱灸價目表"></div>
-          <div class="menu-img"><img src="./237328_0.jpg" alt="完整服務價目表"></div>
+
+          <div class="menu-img">
+            <img src="./237327_0.jpg" alt="熱灸價目表">
+          </div>
+
+          <div class="menu-img">
+            <img src="./237328_0.jpg" alt="完整服務價目表">
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section offer" id="offer">
+
       <div class="container offer-box">
+
         <img src="./237330_0.jpg" alt="做工仔暖心特惠888">
+
         <div class="offer-content">
+
           <div class="kicker">SPECIAL OFFER</div>
+
           <h2>做工仔暖心方案</h2>
-          <p>這是最接地氣、最能成交的主打方案。針對久站、久坐、搬重、長期疲勞、肩頸腰背不舒服的客群。</p>
-          <div class="offer-price"><span>優惠價</span><b>$888</b><span>60分鐘</span></div>
-          <div class="offer-list">
-            <div><i class="fa-solid fa-star"></i><span>全身水牛角經絡疏通</span></div>
-            <div><i class="fa-solid fa-star"></i><span>腰痠背痛舒緩調理</span></div>
-            <div><i class="fa-solid fa-star"></i><span>肌肉僵硬放鬆</span></div>
+
+          <p>
+            這是最接地氣、最能成交的主打方案。針對久站、久坐、搬重、長期疲勞、肩頸腰背不舒服的客群。
+          </p>
+
+          <div class="offer-price">
+            <span>優惠價</span>
+            <b>$888</b>
+            <span>60分鐘</span>
           </div>
-          <a href="#contact" class="btn btn-gold"><i class="fa-solid fa-calendar-check"></i> 預約 888 體驗</a>
+
+          <div class="offer-list">
+
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <span>全身水牛角經絡疏通</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <span>腰痠背痛舒緩調理</span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <span>肌肉僵硬放鬆</span>
+            </div>
+
+          </div>
+
+          <a href="#contact" class="btn btn-gold">
+            <i class="fa-solid fa-calendar-check"></i>
+            預約 888 體驗
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section proof" id="proof">
+
       <div class="container two-grid">
-        <div class="proof-img"><img src="./237331_0.jpg" alt="民俗調理業經絡調理技能職類測驗證書"></div>
-        <div class="copy">
-          <div class="kicker">CERTIFICATE</div>
-          <h2>專業技術認證<br>讓第一次預約更安心</h2>
-          <p>養生舒筋最重要的是信任。把證照放出來，不是炫耀，而是讓陌生客知道這是一間有技術基礎、有實體店面、有責任感的地方型調理品牌。</p>
-          <div class="info-box"><i class="fa-solid fa-certificate"></i><div><b>民俗調理業經絡調理技能證明</b><span>搭配真人操作照與實體店面，信任度會大幅提升。</span></div></div>
+
+        <div class="proof-img">
+          <img src="./237331_0.jpg" alt="民俗調理業經絡調理技能職類測驗證書">
         </div>
+
+        <div class="copy">
+
+          <div class="kicker">CERTIFICATE</div>
+
+          <h2>
+            專業技術認證
+            <br>
+            讓第一次預約更安心
+          </h2>
+
+          <p>
+            養生舒筋最重要的是信任。把證照放出來，不是炫耀，而是讓陌生客知道這是一間有技術基礎、有實體店面、有責任感的地方型調理品牌。
+          </p>
+
+          <div class="info-box">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <b>民俗調理業經絡調理技能證明</b>
+              <span>搭配真人操作照與實體店面，信任度會大幅提升。</span>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+
     </section>
 
     <section class="section" id="gallery">
+
       <div class="container">
+
         <div class="section-head">
           <div class="kicker">REAL PHOTOS</div>
           <h2 class="title">現場實拍</h2>
-          <p class="desc">真實照片比模板圖更能成交，因為客人要的是安心，不是看起來很假的高級感。</p>
+          <p class="desc">
+            真實照片比模板圖更能成交，因為客人要的是安心，不是看起來很假的高級感。
+          </p>
         </div>
+
         <div class="gallery-grid">
-          <div class="gallery-main"><img src="./237323_0.jpg" alt="水牛角操作實拍"><div class="caption"><b>操作細節</b><span>工具、手勢、實作狀態清楚可見。</span></div></div>
-          <div class="gallery-side">
-            <div class="gallery-small"><img src="./237325_0.jpg" alt="店面斜角外觀"><div class="caption"><b>店面外觀</b><span>在地感與可辨識度。</span></div></div>
-            <div class="gallery-small"><img src="./237326_0.jpg" alt="店面正面"><div class="caption"><b>正面招牌</b><span>客人更容易找到位置。</span></div></div>
+
+          <div class="gallery-main">
+            <img src="./237323_0.jpg" alt="水牛角操作實拍">
+            <div class="caption">
+              <b>操作細節</b>
+              <span>工具、手勢、實作狀態清楚可見。</span>
+            </div>
           </div>
+
+          <div class="gallery-side">
+
+            <div class="gallery-small">
+              <img src="./237325_0.jpg" alt="店面斜角外觀">
+              <div class="caption">
+                <b>店面外觀</b>
+                <span>在地感與可辨識度。</span>
+              </div>
+            </div>
+
+            <div class="gallery-small">
+              <img src="./237326_0.jpg" alt="店面正面">
+              <div class="caption">
+                <b>正面招牌</b>
+                <span>客人更容易找到位置。</span>
+              </div>
+            </div>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="section contact" id="contact">
+
       <div class="container">
+
         <div class="section-head">
-          <div class="kicker">CONTACT & MAP</div>
+          <div class="kicker">CONTACT & LOCATION</div>
           <h2 class="title">聯絡我們</h2>
-          <p class="desc">LINE、Facebook 粉專按鈕統一放在最下面。Google 地圖也在這裡。</p>
+          <p class="desc">
+            LINE、Facebook 粉專按鈕統一放在最下面。Google 地圖改成外開導航，手機不會再爆版。
+          </p>
         </div>
+
         <div class="contact-grid">
+
           <div class="contact-card">
-            <div class="contact-row"><i class="fa-solid fa-location-dot"></i><div><b>地址</b><span>宜蘭縣礁溪鄉龍潭路238號</span></div></div>
-            <div class="contact-row"><i class="fa-solid fa-phone"></i><div><b>電話</b><span>0938-105-610</span></div></div>
-            <div class="contact-row"><i class="fa-solid fa-clock"></i><div><b>預約方式</b><span>建議提前透過 LINE 或電話預約，避免現場久候。</span></div></div>
-            <div class="bottom-actions">
-              <a class="btn btn-line" href="https://lin.ee/3WSLJ1p" target="_blank"><i class="fa-brands fa-line"></i> LINE 預約</a>
-              <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank"><i class="fa-brands fa-facebook-f"></i> Facebook 粉專</a>
+
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <b>地址</b>
+                <span>宜蘭縣礁溪鄉龍潭路238號</span>
+              </div>
             </div>
+
+            <div class="contact-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <b>電話</b>
+                <span>0938-105-610</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <b>預約方式</b>
+                <span>建議提前透過 LINE 或電話預約，避免現場久候。</span>
+              </div>
+            </div>
+
+            <div class="bottom-actions">
+
+              <a class="btn btn-line" href="https://lin.ee/3WSLJ1p" target="_blank">
+                <i class="fa-brands fa-line"></i>
+                LINE 預約
+              </a>
+
+              <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook 粉專
+              </a>
+
+            </div>
+
           </div>
-          <div class="map-box">
-            <iframe loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%A4%81%E6%BA%AA%E9%84%89%E9%BE%8D%E6%BD%AD%E8%B7%AF238%E8%99%9F&output=embed"></iframe>
+
+          <div class="map-link-box">
+
+            <h3>店面位置</h3>
+
+            <p>
+              李家堂水牛角舒筋館
+              <br>
+              宜蘭縣礁溪鄉龍潭路238號
+            </p>
+
+            <a
+              class="btn btn-gold"
+              href="https://www.google.com/maps/search/?api=1&query=宜蘭縣礁溪鄉龍潭路238號"
+              target="_blank"
+            >
+              <i class="fa-solid fa-map-location-dot"></i>
+              開啟 Google 地圖導航
+            </a>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
   <footer class="footer">
+
     <div class="container">
+
       <h2 class="serif">李家堂水牛角舒筋館</h2>
-      <p>宜蘭礁溪・水牛角舒筋・古法熱灸・肩頸腰背放鬆</p>
-      <p style="margin-top:10px">© 2026 李家堂水牛角舒筋館. All Rights Reserved.</p>
+
+      <p>
+        宜蘭礁溪・水牛角舒筋・古法熱灸・肩頸腰背放鬆
+      </p>
+
+      <p style="margin-top:10px">
+        © 2026 李家堂水牛角舒筋館. All Rights Reserved.
+      </p>
+
     </div>
+
   </footer>
 
   <div class="mobile-sticky">
-    <a class="btn btn-line" href="https://lin.ee/3WSLJ1p" target="_blank"><i class="fa-brands fa-line"></i> LINE</a>
-    <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank"><i class="fa-brands fa-facebook-f"></i> FB</a>
-    <a class="btn btn-gold" href="#contact"><i class="fa-solid fa-map-location-dot"></i> 地圖</a>
+
+    <a class="btn btn-line" href="https://lin.ee/3WSLJ1p" target="_blank">
+      <i class="fa-brands fa-line"></i>
+      LINE
+    </a>
+
+    <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank">
+      <i class="fa-brands fa-facebook-f"></i>
+      FB
+    </a>
+
+    <a
+      class="btn btn-gold"
+      href="https://www.google.com/maps/search/?api=1&query=宜蘭縣礁溪鄉龍潭路238號"
+      target="_blank"
+    >
+      <i class="fa-solid fa-map-location-dot"></i>
+      地圖
+    </a>
+
   </div>
 
   <script>
@@ -331,5 +1702,6 @@
       menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     }
   </script>
+
 </body>
 </html>
