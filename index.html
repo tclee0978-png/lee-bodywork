@@ -17,7 +17,7 @@
         .btn-gold { background: linear-gradient(90deg, #C9A66B, #E8D5A3); color: #2C2118; transition: all .4s cubic-bezier(0.4, 0, 0.2, 1); }
         .btn-gold:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 20px 40px rgba(201,166,107,0.5); }
         .btn-fb { background: #1877F2; color: white; }
-        .btn-fb:hover { background: #0d6efd; transform: translateY(-3px); }
+        .btn-fb:hover { background: #0d6efd; }
         .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
         .image-card img { transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1); }
         .image-card:hover img { transform: scale(1.12); }
@@ -30,11 +30,10 @@
 </head>
 <body>
 
-    <!-- 導航（已加入 FB 按鈕） -->
+    <!-- 導航 -->
     <nav class="fixed top-0 w-full z-[100] bg-white/95 backdrop-blur-xl border-b border-gold/20 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold tracking-[0.08em] text-deep">李家堂</a>
-            
             <div class="hidden md:flex items-center gap-8 text-sm tracking-widest font-medium">
                 <a href="#story" class="hover:text-gold transition">關於我們</a>
                 <a href="#services" class="hover:text-gold transition">服務項目</a>
@@ -42,18 +41,12 @@
                 <a href="#course" class="hover:text-gold transition">課程報名</a>
                 <a href="#contact" class="hover:text-gold transition">聯絡我們</a>
             </div>
-
             <div class="flex items-center gap-4">
-                <!-- FB 按鈕 -->
-                <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" 
-                   class="btn-fb flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <span>FB 粉專</span>
+                <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" class="btn-fb flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
+                    <i class="fa-brands fa-facebook-f"></i> FB
                 </a>
-                <!-- LINE 按鈕 -->
                 <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
-                    <i class="fa-brands fa-line"></i>
-                    <span>LINE 預約</span>
+                    <i class="fa-brands fa-line"></i> LINE 預約
                 </a>
             </div>
         </div>
@@ -71,7 +64,7 @@
             </p>
             <div class="flex flex-col md:flex-row gap-5 justify-center">
                 <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-14 py-5 rounded-full text-lg font-bold">立即預約體驗</a>
-                <a href="#services" class="border-2 border-white/80 hover:bg-white hover:text-deep px-14 py-5 rounded-full text-lg font-medium transition">了解服務</a>
+                <a href="#course" class="border-2 border-white/80 hover:bg-white hover:text-deep px-14 py-5 rounded-full text-lg font-medium transition">報名課程</a>
             </div>
         </div>
     </section>
@@ -119,17 +112,15 @@
                 <div class="image-card bg-white p-8" data-aos="fade-up">
                     <h3 class="text-2xl font-bold mb-3">水牛角舒筋</h3>
                     <p class="text-gold text-sm mb-6">為什麼要做？現代人久站、久坐、壓力大，筋膜容易黏連緊繃。</p>
-                    <p class="text-gray-600 mb-8">使用天然水牛角沿筋膜線條溫和疏通，能放鬆深層肌肉、促進氣血循環、緩解肩頸腰背痠痛、改善睡眠品質。不硬壓、不留痕，效果持久，讓你感覺「身體變輕、精神變好」。</p>
+                    <p class="text-gray-600 mb-8">使用天然水牛角沿筋膜線條溫和疏通，能放鬆深層肌肉、促進氣血循環、緩解肩頸腰背痠痛、改善睡眠品質。</p>
                     <div class="text-gold text-3xl font-light">NT$1,800 起</div>
                 </div>
-
                 <div class="image-card bg-white p-8" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="text-2xl font-bold mb-3">臉部撥筋</h3>
                     <p class="text-gold text-sm mb-6">為什麼要做？臉部肌肉長期緊繃，容易浮腫、暗沉、線條下垂。</p>
                     <p class="text-gray-600 mb-8">溫和撥開臉部筋膜與淋巴，促進血液循環、排出廢物、減輕浮腫、緊緻輪廓、改善氣色。</p>
                     <div class="text-gold text-3xl font-light">NT$1,200 起</div>
                 </div>
-
                 <div class="image-card bg-white p-8" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-2xl font-bold mb-3">整復舒緩</h3>
                     <p class="text-gold text-sm mb-6">為什麼要做？姿勢不良、久站久坐，容易導致關節錯位、肌肉不平衡。</p>
@@ -153,18 +144,73 @@
         </div>
     </section>
 
-    <!-- 課程報名 -->
-    <section id="course" class="py-28">
-        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
-            <h3 class="text-gold tracking-widest uppercase mb-4">專業傳承</h3>
-            <h2 class="text-5xl font-bold mb-10">水牛角舒筋技術課程</h2>
-            <div class="bg-white shadow-2xl rounded-3xl p-12 border border-gold/30">
-                <ul class="text-left space-y-6 text-xl mb-12 max-w-md mx-auto">
-                    <li class="flex items-center gap-4"><span class="text-3xl">●</span> 初階體驗班（2小時）</li>
-                    <li class="flex items-center gap-4"><span class="text-3xl">●</span> 基礎技術班（8小時）</li>
-                    <li class="flex items-center gap-4"><span class="text-3xl">●</span> 進階師資培訓班</li>
-                </ul>
-                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold inline-block px-16 py-6 rounded-full text-2xl font-bold">LINE 立即報名課程</a>
+    <!-- 課程報名評估表單（專業版） -->
+    <section id="course" class="py-28 bg-[#F8F5F0]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-gold tracking-widest uppercase mb-4">專業評估</h3>
+                <h2 class="text-5xl font-bold mb-6">水牛角舒筋課程報名</h2>
+                <p class="text-xl text-gray-600">填完表單 → 芳遠老師親自評估 → 推薦最適合你的班別</p>
+            </div>
+
+            <div class="bg-white shadow-2xl rounded-3xl p-10 md:p-16 border border-gold/30" data-aos="fade-up">
+                <form id="courseForm" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">姓名 <span class="text-red-500">*</span></label>
+                            <input type="text" required class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">手機 <span class="text-red-500">*</span></label>
+                            <input type="tel" required class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">LINE ID</label>
+                        <input type="text" class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-3">想報名的課程 <span class="text-red-500">*</span></label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="cursor-pointer"><input type="radio" name="course" value="初階" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">初階體驗班（2小時）</span></label>
+                            <label class="cursor-pointer"><input type="radio" name="course" value="基礎" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">基礎技術班（8小時）</span></label>
+                            <label class="cursor-pointer"><input type="radio" name="course" value="進階" class="hidden peer"> <span class="block p-6 border-2 border-gray-200 rounded-2xl peer-checked:border-gold text-center">進階師資培訓班</span></label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-3">目前有舒筋或按摩經驗嗎？</label>
+                        <select class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
+                            <option value="">請選擇</option>
+                            <option>完全沒有，想從零開始</option>
+                            <option>有基礎按摩經驗</option>
+                            <option>已經在做相關工作</option>
+                            <option>其他</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-3">你最希望學會什麼？（可複選）</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 幫家人朋友舒筋</label>
+                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 成為專業師傅接客</label>
+                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 自己開店</label>
+                            <label class="flex items-center gap-3"><input type="checkbox" class="w-5 h-5 accent-gold"> 只是想深入學習</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-3">什麼時間方便上課？</label>
+                        <input type="text" placeholder="例：平日晚上、週末白天" class="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:outline-none focus:border-gold">
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-[#C9A66B] to-[#E8D5A3] text-[#2C2118] py-6 rounded-3xl text-xl font-bold tracking-widest hover:scale-[1.02] transition">
+                        送出報名評估 → 芳遠老師將親自回覆
+                    </button>
+                    <p class="text-center text-sm text-gray-500">填完後 24 小時內會收到老師評估建議</p>
+                </form>
             </div>
         </div>
     </section>
