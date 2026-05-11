@@ -3,162 +3,240 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="description" content="李家堂水牛角舒筋館｜礁溪專業水牛角順筋・國家證照療癒。芳遠老師親自服務，提供肩頸腰背舒筋、臉部撥筋、整復舒緩。" />
-    <meta name="keywords" content="李家堂水牛角舒筋館, 礁溪舒筋, 宜蘭水牛角舒筋, 肩頸舒筋, 腰背舒筋, 臉部撥筋, 整復舒緩, 芳遠老師" />
-    <title>李家堂水牛角舒筋館｜礁溪專業水牛角順筋・頂級療癒</title>
+    <title>李家堂水牛角舒筋館｜宜蘭礁溪水牛角舒筋・古法熱灸</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
-        html, body { max-width: 100%; overflow-x: hidden; background: #F8F5F0; color: #2C2118; font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; }
-        h1, h2, h3, h4 { font-family: 'Noto Serif TC', serif; }
-        .text-gold { color: #C9A66B; }
-        .bg-deep { background: #2C2118; }
-        .hero-section { background: linear-gradient(rgba(44,33,24,0.65), rgba(44,33,24,0.75)), url('./hero.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .btn-gold { background: linear-gradient(90deg, #C9A66B, #E8D5A3); color: #2C2118; transition: all .4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-gold:hover { transform: translateY(-8px) scale(1.05); box-shadow: 0 25px 50px rgba(201,166,107,0.5); }
-        .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s; }
-        .image-card:hover { transform: translateY(-12px); box-shadow: 0 30px 60px rgba(0,0,0,0.25); }
-        .image-card img { transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); }
-        .image-card:hover img { transform: scale(1.15); }
-        .section-title:after { content: ''; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 90px; height: 4px; background: linear-gradient(to right, #C9A66B, #E8D5A3); }
-        /* 水平滑動價目表 */
-        .price-scroll { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-        .price-scroll::-webkit-scrollbar { display: none; }
-        .price-card { scroll-snap-align: start; min-width: 280px; }
+        /* 基礎鎖定 */
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            background: #FDFCF8;
+            color: #2A1D15;
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 { font-family: 'Noto Serif TC', serif; }
+        .bg-dark-brown { background: #20140F; }
+        .text-gold { color: #D4AA62; }
+        .btn-main { transition: .3s; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+        .btn-main:hover { transform: translateY(-3px); }
+        
+        /* 圖片容器與點擊提示 */
+        .image-container { border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); cursor: pointer; position: relative; }
+        .image-container img { transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); width: 100%; height: 100%; object-fit: cover; }
+        .image-container:hover img { transform: scale(1.08); }
+
+        /* 隱藏捲軸但保留功能 */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .price-tag { font-family: 'Noto Serif TC', serif; font-weight: 900; color: #8B3428; }
+        .hidden { display: none !important; }
+        
+        /* 燈箱優化 */
+        #lightbox { transition: opacity 0.3s ease; backdrop-filter: blur(8px); }
     </style>
 </head>
+
 <body>
 
-    <!-- 導航 -->
-    <nav class="fixed top-0 w-full z-[100] bg-white/95 backdrop-blur-xl border-b border-gold/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold tracking-[0.08em] text-deep">李家堂</a>
-            <div class="hidden md:flex items-center gap-8 text-sm tracking-widest font-medium">
-                <a href="#story" class="hover:text-gold transition">關於我們</a>
-                <a href="#services" class="hover:text-gold transition">服務項目</a>
-                <a href="#process" class="hover:text-gold transition">療癒流程</a>
-                <a href="#testimonials" class="hover:text-gold transition">客戶見證</a>
-                <a href="#price" class="hover:text-gold transition">價格方案</a>
-                <a href="#course" class="hover:text-gold transition">課程報名</a>
-                <a href="#contact" class="hover:text-gold transition">聯絡我們</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" class="btn-fb flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
-                    <i class="fa-brands fa-facebook-f"></i> FB
-                </a>
-                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
-                    <i class="fa-brands fa-line"></i> LINE 預約
-                </a>
+    <nav class="fixed top-0 w-full z-[100] bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-dark-brown rounded-full flex items-center justify-center text-gold">
+                    <i class="fa-solid fa-hands-holding-circle"></i>
+                </div>
+                <div>
+                    <span class="block font-black text-lg leading-none">李家堂</span>
+                    <span class="text-[9px] tracking-widest text-gray-400 uppercase italic">Traditional Shujin</span>
+                </div>
+            </a>
+            <div class="flex gap-5">
+                <a href="tel:0938105610" class="text-dark-brown text-xl"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://lin.ee/wrNysV3" target="_blank" class="text-[#06C755] text-2xl"><i class="fa-brands fa-line"></i></a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero-section text-white text-center px-6">
-        <div data-aos="fade-up" data-aos-duration="1600" class="max-w-5xl">
-            <span class="inline-block bg-white/20 backdrop-blur-md px-8 py-3 rounded-full text-xs tracking-[0.4em] mb-8">礁溪・專業舒筋</span>
-            <h1 class="text-6xl md:text-8xl font-bold leading-none tracking-wider mb-8">李家堂水牛角舒筋館</h1>
-            <p class="text-2xl md:text-3xl font-light tracking-widest mb-12">把打拼的疲憊，還給自己</p>
-            <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <a href="#course" class="btn-gold px-16 py-6 rounded-full text-xl font-bold">立即報名課程</a>
-                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="border-2 border-white/80 hover:bg-white hover:text-deep px-16 py-6 rounded-full text-xl font-medium transition">LINE 預約體驗</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 證書 + 老師照片 -->
-    <section id="story" class="py-28 max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
+    <section class="pt-28 pb-16 px-6 bg-dark-brown text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div data-aos="fade-right">
-                <h3 class="text-gold tracking-widest uppercase text-sm mb-3">芳遠老師</h3>
-                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-8">國家證照<br>水牛角舒筋師</h2>
-                <p class="text-xl leading-relaxed text-gray-700">10年以上臨床經驗，堅持溫和順筋手法。</p>
-                <img src="./certificate.jpg" alt="國家證照" class="mt-10 w-full rounded-3xl shadow-2xl">
+                <div class="inline-block border border-gold/40 px-4 py-1 rounded-full text-gold text-xs tracking-widest mb-6 uppercase">Yilan Jiaoxi・Master Shujin</div>
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">水牛角舒筋<br><span class="text-gold">古法熱灸</span></h1>
+                <p class="text-gray-300 text-lg mb-10 leading-relaxed font-light">累積的疲勞與緊繃，交給職人慢慢鬆開。<br>宜蘭礁溪在地調理，實打實的老師傅功夫。</p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#offer" class="btn-main bg-gold text-dark-brown px-10 py-4 rounded-xl font-bold text-lg shadow-xl">做工仔暖心方案 $888</a>
+                    <a href="tel:0938105610" class="btn-main border border-white/20 px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-dark-brown transition">直接電話諮詢</a>
+                </div>
             </div>
-            <div class="image-card h-[620px]" data-aos="fade-left">
-                <img src="./teacher.jpg" alt="芳遠老師" class="w-full h-full object-cover">
+            <div class="image-container md:h-[500px]" data-aos="fade-left" onclick="openLightbox('237324_0.jpg')">
+                <img src="237324_0.jpg" alt="舒筋實拍">
             </div>
         </div>
     </section>
 
-    <!-- 店面照片 -->
-    <section class="py-12 bg-[#F8F5F0]">
-        <div class="max-w-7xl mx-auto px-6">
-            <img src="./store.jpg" alt="李家堂店面" class="w-full rounded-3xl shadow-2xl">
+    <section id="offer" class="py-24 px-6 bg-[#FDFCF8]">
+        <div class="max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gold/15" data-aos="zoom-in">
+            <div class="grid md:grid-cols-5">
+                <div class="md:col-span-2 image-container rounded-none" onclick="openLightbox('237330_0.jpg')">
+                    <img src="237330_0.jpg" alt="做工仔方案">
+                </div>
+                <div class="md:col-span-3 p-10 md:p-16">
+                    <h2 class="text-4xl font-black mb-6 italic">做工仔暖心方案</h2>
+                    <p class="text-gray-500 mb-8 text-lg leading-loose">針對長期勞動、久坐久站導致的全身硬梆梆。給自己一小時，讓李師傅幫您把緊繃卸下來。</p>
+                    <div class="price-tag text-6xl mb-10">$888 <span class="text-gray-400 text-sm font-light">/ 完整一小時課程</span></div>
+                    <ul class="space-y-4 mb-12 text-gray-700 text-lg font-bold">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-[#06C755] mr-3"></i> 水牛角全身經絡疏通</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-[#06C755] mr-3"></i> 肩頸腰背深層舒緩</li>
+                    </ul>
+                    <a href="https://lin.ee/wrNysV3" target="_blank" class="btn-main w-full bg-[#06C755] text-white py-5 rounded-2xl font-bold text-xl shadow-lg">
+                        <i class="fa-brands fa-line mr-2 text-2xl"></i> LINE 立即預約 888
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 價格表 - 水平滑動卡片 -->
-    <section id="price" class="py-28 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="section-title text-5xl font-bold text-center mb-16">療程價格</h2>
-            <div class="price-scroll flex gap-6 pb-8 snap-x">
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
+    <section class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-widest">服務項目</h2>
+                <p class="text-gray-500">職人專業證照、不推銷、價格透明</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="bg-[#FDFCF8] p-10 rounded-3xl border border-gray-100 shadow-sm" data-aos="fade-up">
+                    <i class="fa-solid fa-fire-flame-curved text-gold text-4xl mb-6 block"></i>
+                    <h3 class="text-2xl font-bold mb-4">熱灸深層舒緩</h3>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">排除寒濕疲勞，溫熱放鬆深層筋膜。</p>
+                    <div class="price-tag text-3xl">$1200 <small class="text-gray-400">/ 60min</small></div>
+                </div>
+                <div class="bg-[#FDFCF8] p-10 rounded-3xl border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-person-rays text-gold text-4xl mb-6 block"></i>
                     <h3 class="text-2xl font-bold mb-4">全身筋骨放鬆</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$900</div>
-                    <p class="text-gray-600">60分鐘</p>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">針對全身經絡進行大範圍舒壓放鬆。</p>
+                    <div class="price-tag text-3xl">$900</div>
                 </div>
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
+                <div class="bg-[#FDFCF8] p-10 rounded-3xl border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-hand-sparkles text-gold text-4xl mb-6 block"></i>
                     <h3 class="text-2xl font-bold mb-4">局部酸痛舒緩</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$600</div>
-                    <p class="text-gray-600">60分鐘</p>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">針對特定僵硬區域（如落枕、局部勞損）處理。</p>
+                    <div class="price-tag text-3xl">$600</div>
                 </div>
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
-                    <h3 class="text-2xl font-bold mb-4">肩頸鬆筋開穴</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$1200</div>
-                    <p class="text-gray-600">60分鐘</p>
-                </div>
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
-                    <h3 class="text-2xl font-bold mb-4">背部鬆筋開穴</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$1200</div>
-                    <p class="text-gray-600">60分鐘</p>
-                </div>
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
-                    <h3 class="text-2xl font-bold mb-4">雙腿鬆筋開穴</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$1200</div>
-                    <p class="text-gray-600">60分鐘</p>
-                </div>
-                <div class="price-card bg-white border border-gold/30 rounded-3xl p-8 text-center min-w-[280px] snap-start">
-                    <h3 class="text-2xl font-bold mb-4">小臉穴位鬆筋</h3>
-                    <div class="text-6xl font-light text-gold mb-6">$1500</div>
-                    <p class="text-gray-600">60分鐘</p>
+            </div>
+
+            <div class="relative max-w-6xl mx-auto" data-aos="fade-up">
+                <div class="flex overflow-x-auto pb-10 gap-6 snap-x snap-mandatory scrollbar-hide">
+                    <div class="flex-none w-[90%] md:w-[calc(50%-1.5rem)] snap-center" onclick="openLightbox('237327_0.jpg')">
+                        <div class="image-container h-[450px] md:h-[600px] border-[8px] border-white shadow-2xl">
+                            <img src="237327_0.jpg" alt="熱灸價目表">
+                        </div>
+                        <p class="text-center mt-6 text-dark-brown font-bold text-sm tracking-[0.2em]">← 左右滑動・點擊放大 →</p>
+                    </div>
+                    <div class="flex-none w-[90%] md:w-[calc(50%-1.5rem)] snap-center" onclick="openLightbox('237328_0.jpg')">
+                        <div class="image-container h-[450px] md:h-[600px] border-[8px] border-white shadow-2xl">
+                            <img src="237328_0.jpg" alt="完整服務項目">
+                        </div>
+                        <p class="text-center mt-6 text-dark-brown font-bold text-sm tracking-[0.2em]">誠信經營・公道收費</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 課程報名 -->
-    <section id="course" class="py-28 bg-[#F8F5F0]">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-5xl font-bold mb-4">水牛角舒筋課程報名</h2>
-                <p class="text-xl text-gray-600">芳遠老師親自評估</p>
+    <section class="py-24 bg-dark-brown text-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center mb-24">
+            <div class="image-container border-8 border-white/5" data-aos="fade-right" onclick="openLightbox('237331_0.jpg')">
+                <img src="237331_0.jpg" alt="李芳遠師傅證照">
             </div>
-            <div class="bg-white shadow-2xl rounded-3xl overflow-hidden border border-gold/30">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw_F-O14KWltq-mg7iWVOWBOfLnkjXAZnAu2sa0R0jkI8K6Q/viewform?embedded=true" width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0">載入中...</iframe>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl md:text-5xl font-black mb-8 leading-tight">專業技術認證<br><span class="text-gold">李家堂教學傳承</span></h2>
+                <p class="text-gray-400 text-lg leading-loose mb-10 font-light italic">
+                    「學術不分門檻，傳承只收有心人。」<br>
+                    擁有民俗調理業專業證照，實務與理論深度結合。對經絡調理感興趣者，歡迎預約學習諮詢。
+                </p>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="image-container h-36" onclick="openLightbox('237323_0.jpg')"><img src="237323_0.jpg"></div>
+                    <div class="image-container h-36" onclick="openLightbox('237325_0.jpg')"><img src="237325_0.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-[3rem] overflow-hidden shadow-2xl">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw_F-O14KWltq-mg7iWVOWBOfLnkjXAZnAu2sa0R0jkI8K6Q/viewform?embedded=true" width="100%" height="800" frameborder="0">載入中…</iframe>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-[#FDFCF8] p-12 rounded-[3.5rem] border border-gray-100 shadow-sm" data-aos="fade-up">
+                <h2 class="text-3xl font-black mb-10">預約聯絡方式</h2>
+                <div class="space-y-8 text-xl">
+                    <p class="flex items-center"><i class="fa-solid fa-location-dot text-gold mr-5"></i> 宜蘭縣礁溪鄉龍潭路238號</p>
+                    <p class="flex items-center"><i class="fa-solid fa-phone text-gold mr-5"></i> 0938-105-610</p>
+                    <p class="flex items-center text-gray-500 text-base"><i class="fa-solid fa-circle-check text-gold mr-5"></i> 建議提前來電預約，避免現場久候</p>
+                </div>
+                <div class="mt-14 flex flex-col sm:flex-row gap-5">
+                    <a href="https://lin.ee/wrNysV3" target="_blank" class="btn-main bg-[#06C755] text-white px-10 py-5 rounded-2xl font-bold shadow-lg">
+                        <i class="fa-brands fa-line text-2xl mr-2"></i> LINE 快速預約
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" class="btn-main bg-[#1877F2] text-white px-10 py-5 rounded-2xl font-bold shadow-lg">
+                        <i class="fa-brands fa-facebook-f text-2xl mr-2"></i> 臉書粉專
+                    </a>
+                </div>
+            </div>
+            <div class="bg-dark-brown text-white p-12 rounded-[3.5rem] flex flex-col justify-center items-center text-center shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-3xl font-black mb-8 italic">點擊下方開啟導航</h3>
+                <p class="text-gray-400 mb-12 font-light">礁溪在地三十年功夫，在地人都推薦的專業調理。</p>
+                <a href="http://googleusercontent.com/maps.google.com/8" target="_blank" class="btn-main bg-white text-dark-brown px-14 py-5 rounded-2xl font-black text-2xl shadow-xl hover:bg-gold hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-map-location-dot mr-3 text-[#EA4335]"></i> 開始導航
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- 聯絡 -->
-    <section id="contact" class="py-28 bg-deep text-white text-center">
-        <div class="max-w-4xl mx-auto px-6">
-            <h3 class="text-5xl font-bold mb-8">李家堂水牛角舒筋館</h3>
-            <p class="text-2xl mb-3">📍 宜蘭縣礁溪鄉龍潭路238號</p>
-            <p class="text-2xl mb-10">📞 0938-105-610</p>
-            <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-16 py-6 rounded-full text-xl">LINE 立即預約</a>
-        </div>
-    </section>
-
-    <footer class="bg-black text-white/70 py-20 text-center text-sm">
-        © 2026 李家堂水牛角舒筋館｜Designed for 煥然
+    <footer class="py-16 bg-dark-brown text-white/30 text-center text-xs tracking-widest border-t border-white/5">
+        <p class="mb-4 text-white/80 font-bold text-sm">© 2026 李家堂水牛角舒筋館</p>
+        <p>宜蘭礁溪龍潭路238號 | Designed by 然然設計</p>
     </footer>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-[9999] hidden flex justify-center items-center p-5 cursor-pointer" onclick="closeLightbox()">
+        <span class="absolute top-5 right-10 text-white text-6xl">&times;</span>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border-2 border-white/10 scale-95 transition-transform duration-300">
+    </div>
+
+    <div class="fixed bottom-0 left-0 w-full p-4 grid grid-cols-2 gap-4 bg-white/90 backdrop-blur-md md:hidden z-[100] border-t border-gray-100">
+        <a href="tel:0938105610" class="btn-main bg-dark-brown text-white py-4 rounded-xl font-bold"><i class="fa-solid fa-phone"></i> 撥打電話</a>
+        <a href="https://lin.ee/wrNysV3" target="_blank" class="btn-main bg-[#06C755] text-white py-4 rounded-xl font-bold"><i class="fa-brands fa-line"></i> LINE 預約</a>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1200, once: true });
+        AOS.init({ duration: 1200, once: true, offset: 60 });
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            setTimeout(() => { img.classList.remove('scale-95'); img.classList.add('scale-100'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.classList.remove('scale-100');
+            img.classList.add('scale-95');
+            setTimeout(() => { lightbox.classList.add('hidden'); }, 300);
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
     </script>
 </body>
 </html>
