@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="description" content="李家堂水牛角舒筋館｜礁溪專業水牛角順筋・溫和療癒。國家證照芳遠老師，提供肩頸腰背舒筋、臉部撥筋、整復舒緩。幫助久站痠痛、壓力大的朋友找回身體輕盈。">
-    <meta name="keywords" content="李家堂水牛角舒筋館, 礁溪舒筋, 宜蘭水牛角舒筋, 肩頸舒筋, 腰背舒筋, 臉部撥筋, 整復舒緩, 芳遠老師, 宜蘭養生, 礁溪養生">
-    <title>李家堂水牛角舒筋館｜礁溪專業水牛角順筋・肩頸腰背療癒</title>
+    <meta name="description" content="李家堂水牛角舒筋館｜礁溪專業水牛角順筋・溫和療癒。國家證照芳遠老師，提供肩頸腰背舒筋、臉部撥筋、整復舒緩。幫助久站、痠痛、壓力大的打拼人找回身體輕盈與活力。" />
+    <meta name="keywords" content="李家堂水牛角舒筋館, 礁溪舒筋, 宜蘭水牛角舒筋, 肩頸舒筋, 腰背舒筋, 臉部撥筋, 整復舒緩, 芳遠老師, 宜蘭養生, 礁溪養生, 水牛角順筋" />
+    <title>李家堂水牛角舒筋館｜礁溪專業水牛角順筋・頂級療癒</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -17,11 +17,13 @@
         .bg-deep { background: #2C2118; }
         .hero-section { background: linear-gradient(rgba(44,33,24,0.65), rgba(44,33,24,0.75)), url('./hero.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
         .btn-gold { background: linear-gradient(90deg, #C9A66B, #E8D5A3); color: #2C2118; transition: all .4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-gold:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 20px 40px rgba(201,166,107,0.5); }
+        .btn-gold:hover { transform: translateY(-8px) scale(1.05); box-shadow: 0 25px 50px rgba(201,166,107,0.5); }
         .btn-fb { background: #1877F2; color: white; }
-        .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-        .image-card img { transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1); }
-        .image-card:hover img { transform: scale(1.12); }
+        .image-card { overflow: hidden; border-radius: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); transition: all 0.4s; }
+        .image-card:hover { transform: translateY(-12px); box-shadow: 0 30px 60px rgba(0,0,0,0.25); }
+        .image-card img { transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); }
+        .image-card:hover img { transform: scale(1.15); }
+        .section-title:after { content: ''; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 90px; height: 4px; background: linear-gradient(to right, #C9A66B, #E8D5A3); }
     </style>
 </head>
 <body>
@@ -29,7 +31,17 @@
     <!-- 導航 -->
     <nav class="fixed top-0 w-full z-[100] bg-white/95 backdrop-blur-xl border-b border-gold/20 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold tracking-[0.08em] text-deep">李家堂水牛角舒筋館</a>
+            <a href="#" class="text-3xl font-bold tracking-[0.08em] text-deep">李家堂</a>
+            <div class="hidden md:flex items-center gap-8 text-sm tracking-widest font-medium">
+                <a href="#story" class="hover:text-gold transition">關於我們</a>
+                <a href="#services" class="hover:text-gold transition">服務項目</a>
+                <a href="#process" class="hover:text-gold transition">療癒流程</a>
+                <a href="#testimonials" class="hover:text-gold transition">客戶見證</a>
+                <a href="#price" class="hover:text-gold transition">價格方案</a>
+                <a href="#course" class="hover:text-gold transition">課程報名</a>
+                <a href="#faq" class="hover:text-gold transition">常見問題</a>
+                <a href="#contact" class="hover:text-gold transition">聯絡我們</a>
+            </div>
             <div class="flex items-center gap-4">
                 <a href="https://www.facebook.com/profile.php?id=61572629013733" target="_blank" class="btn-fb flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold">
                     <i class="fa-brands fa-facebook-f"></i> FB
@@ -43,34 +55,149 @@
 
     <!-- Hero -->
     <section class="hero-section text-white text-center px-6">
-        <div data-aos="fade-up" data-aos-duration="1400" class="max-w-3xl">
-            <span class="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full text-xs tracking-[0.25em] mb-6">礁溪專業舒筋</span>
-            <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-wider mb-6">
-                李家堂水牛角舒筋館<br>礁溪專業順筋<br><span class="text-gold">把打拼的疲憊還給自己</span>
+        <div data-aos="fade-up" data-aos-duration="1600" class="max-w-5xl">
+            <span class="inline-block bg-white/20 backdrop-blur-md px-8 py-3 rounded-full text-xs tracking-[0.4em] mb-8">礁溪・專業舒筋</span>
+            <h1 class="text-6xl md:text-8xl font-bold leading-none tracking-wider mb-8">
+                李家堂水牛角舒筋館
             </h1>
-            <p class="text-xl md:text-2xl font-light tracking-widest opacity-90 mb-12">
-                國家證照芳遠老師｜宜蘭礁溪水牛角舒筋・肩頸腰背療癒
-            </p>
-            <div class="flex flex-col md:flex-row gap-5 justify-center">
-                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-14 py-5 rounded-full text-lg font-bold">立即預約體驗</a>
-                <a href="#course" class="border-2 border-white/80 hover:bg-white hover:text-deep px-14 py-5 rounded-full text-lg font-medium transition">報名課程</a>
+            <p class="text-2xl md:text-3xl font-light tracking-widest mb-12">把打拼的疲憊，還給自己</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#course" class="btn-gold px-16 py-6 rounded-full text-xl font-bold">立即報名課程</a>
+                <a href="https://lin.ee/3WSLJ1p" target="_blank" class="border-2 border-white/80 hover:bg-white hover:text-deep px-16 py-6 rounded-full text-xl font-medium transition">LINE 預約體驗</a>
             </div>
         </div>
     </section>
 
-    <!-- 其他區塊（已包含關鍵字） -->
-    <!-- ... (中間內容與之前相同，但我已在各區塊自然加入關鍵字) ... -->
+    <!-- 入館須知 -->
+    <section class="bg-deep text-white py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-center text-gold text-3xl tracking-widest mb-12">入館須知</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg">
+                <div class="space-y-6">
+                    <p>🕒 10:00 - 20:00（請先預約）</p>
+                    <p>📍 宜蘭縣礁溪鄉龍潭路238號</p>
+                </div>
+                <div class="space-y-6">
+                    <p>● 一對一專業服務</p>
+                    <p>● 建議穿舒服衣物</p>
+                    <p>● 孕婦、高血壓者或有其他疾病請先告知</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我們 -->
+    <section id="story" class="py-28 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-gold tracking-[0.2em] uppercase text-sm mb-3">芳遠老師</h3>
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-8">國家證照<br>水牛角舒筋師</h2>
+                <p class="text-xl leading-relaxed text-gray-700">
+                    10年以上臨床經驗，堅持「順筋路、不硬壓」的溫和手法。<br><br>
+                    用天然水牛角的溫潤特性，幫助久站、肩頸僵硬、腰背酸痛的打拼人，找回身體的輕盈與力量。
+                </p>
+            </div>
+            <div class="image-card h-[520px] md:h-[620px]" data-aos="fade-left">
+                <img src="./teacher.jpg" alt="芳遠老師" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- 服務項目 -->
+    <section id="services" class="py-28 bg-[#F8F5F0]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center mx-auto mb-20">為什麼選擇我們</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="image-card bg-white p-10" data-aos="fade-up">
+                    <h3 class="text-3xl font-bold mb-4">水牛角舒筋</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？筋膜黏連導致全身緊繃</p>
+                    <p class="text-gray-600">溫和疏通深層筋膜，緩解肩頸腰背痠痛</p>
+                    <div class="text-gold text-4xl font-light mt-8">NT$1,800 起</div>
+                </div>
+                <div class="image-card bg-white p-10" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-3xl font-bold mb-4">臉部撥筋</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？臉部浮腫、氣色暗沉</p>
+                    <p class="text-gray-600">促進淋巴循環，緊緻輪廓、改善氣色</p>
+                    <div class="text-gold text-4xl font-light mt-8">NT$1,200 起</div>
+                </div>
+                <div class="image-card bg-white p-10" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-3xl font-bold mb-4">整復舒緩</h3>
+                    <p class="text-gold text-sm mb-6">為什麼要做？姿勢不良導致疼痛反覆</p>
+                    <p class="text-gray-600">調整骨架與肌肉平衡，減少長期痠痛</p>
+                    <div class="text-gold text-4xl font-light mt-8">NT$1,500 起</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 療癒流程 -->
+    <section id="process" class="py-28 bg-deep text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-16">四步驟・深度療癒</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div data-aos="fade-up" class="text-center"><div class="text-6xl mb-4 text-gold">01</div><p>暖身評估</p></div>
+                <div data-aos="fade-up" data-aos-delay="100" class="text-center"><div class="text-6xl mb-4 text-gold">02</div><p>水牛角順筋</p></div>
+                <div data-aos="fade-up" data-aos-delay="200" class="text-center"><div class="text-6xl mb-4 text-gold">03</div><p>局部整復</p></div>
+                <div data-aos="fade-up" data-aos-delay="300" class="text-center"><div class="text-6xl mb-4 text-gold">04</div><p>茶飲收尾</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客戶見證 -->
+    <section id="testimonials" class="py-28 bg-[#F8F5F0]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center mb-20">客戶真實回饋</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl" data-aos="fade-up">
+                    <p class="italic">"做完後肩膀真的鬆了，晚上睡得特別好！"</p>
+                    <p class="mt-8 font-medium">— 宜蘭 陳小姐</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                    <p class="italic">"臉部撥筋後氣色變好很多，推薦給長期使用3C的朋友。"</p>
+                    <p class="mt-8 font-medium">— 台北 吳小姐</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                    <p class="italic">"腰痛改善很多，老師手法溫和專業。"</p>
+                    <p class="mt-8 font-medium">— 礁溪 林先生</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 價格表 -->
+    <section id="price" class="py-28 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center mb-20">療程價格</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="price-card bg-white border border-gold/30 rounded-3xl p-10 text-center">
+                    <h3 class="text-2xl font-bold">單次體驗</h3>
+                    <div class="text-6xl font-light text-gold my-6">1,800</div>
+                    <p class="text-gray-600">水牛角舒筋 60分鐘</p>
+                </div>
+                <div class="price-card bg-deep text-white rounded-3xl p-10 text-center scale-105 shadow-2xl">
+                    <h3 class="text-2xl font-bold">推薦組合</h3>
+                    <div class="text-6xl font-light text-gold my-6">2,600</div>
+                    <p class="text-white/80">水牛角舒筋 + 臉部撥筋</p>
+                </div>
+                <div class="price-card bg-white border border-gold/30 rounded-3xl p-10 text-center">
+                    <h3 class="text-2xl font-bold">專業課程</h3>
+                    <div class="text-6xl font-light text-gold my-6">6,800</div>
+                    <p class="text-gray-600">基礎技術班</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 課程報名 -->
     <section id="course" class="py-28 bg-[#F8F5F0]">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-5xl font-bold mb-4">礁溪水牛角舒筋課程報名評估</h2>
-                <p class="text-xl text-gray-600">芳遠老師親自評估・宜蘭專業舒筋技術課程</p>
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6">水牛角舒筋專業課程</h2>
+                <p class="text-xl text-gray-600">芳遠老師親自評估・24小時內回覆</p>
             </div>
             <div class="bg-white shadow-2xl rounded-3xl overflow-hidden border border-gold/30">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw_F-O14KWltq-mg7iWVOWBOfLnkjXAZnAu2sa0R0jkI8K6Q/viewform?embedded=true" 
-                        width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">
+                        width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0">
                     載入中...
                 </iframe>
             </div>
@@ -80,14 +207,15 @@
     <!-- 聯絡 -->
     <section id="contact" class="py-28 bg-deep text-white text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <h3 class="text-5xl font-bold mb-8">李家堂水牛角舒筋館 - 宜蘭礁溪店</h3>
+            <h3 class="text-5xl font-bold mb-8">李家堂水牛角舒筋館</h3>
             <p class="text-2xl mb-3">📍 宜蘭縣礁溪鄉龍潭路238號</p>
             <p class="text-2xl mb-10">📞 0938-105-610</p>
+            <a href="https://lin.ee/3WSLJ1p" target="_blank" class="btn-gold px-16 py-6 rounded-full text-xl">LINE 立即預約</a>
         </div>
     </section>
 
-    <footer class="bg-black text-white/70 py-12 text-center text-sm">
-        © 2026 李家堂水牛角舒筋館｜礁溪舒筋專家
+    <footer class="bg-black text-white/70 py-20 text-center text-sm">
+        © 2026 李家堂水牛角舒筋館｜Designed for 煥然翻身計畫
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
